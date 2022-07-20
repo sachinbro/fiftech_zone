@@ -55,6 +55,7 @@ export default {
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
           navBackground: '#9B51E0',
+          purpleish: '#B051E0',
         },
       }
     }
