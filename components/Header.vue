@@ -65,5 +65,7 @@
         background-color: white;
         color: #9B51E0 !important;
     }
-  
+    .sticky{
+ 
+    }
 </style>
