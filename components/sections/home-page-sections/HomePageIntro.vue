@@ -1,5 +1,5 @@
 <template>
-    <div>
+    
         <v-container class="main" fluid>
             <v-row no-gutters>
                 <v-col cols="1"></v-col>
@@ -27,7 +27,7 @@
                 <div style="color:#3D2F2F; font-size: 35px;"> to deliver outstanding results.</div>
             </v-row>
             <v-row class="white--text">
-                <v-col></v-col>
+                <v-col cols="1"></v-col>
                 <v-col class="tasks" cols="1">
                     <v-card elevation="0" height="" >
                         <v-card-text class=" rounded-circle text-center">
@@ -35,8 +35,9 @@
                                 1
                             </div>
                         </v-card-text>
-                    </v-card> </v-col>
-                <v-col cols="2" class="horizontal-line"></v-col>
+                    </v-card> 
+                </v-col>
+                <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1">
                     <v-card-text class=" rounded-circle text-center">
                         <div class="multilayer-circle ">
@@ -44,7 +45,7 @@
                         </div>
                     </v-card-text>
                 </v-col>
-                <v-col cols="2" class="horizontal-line"></v-col>
+                <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1">
                     <v-card-text class=" rounded-circle text-center">
                         <div class="multilayer-circle ">
@@ -52,10 +53,26 @@
                         </div>
                     </v-card-text>
                 </v-col>
-                <v-col></v-col>
+                <v-col cols="1"></v-col>
             </v-row>
+            <v-row>
+                <v-col class="d-flex flex-column align-center justify-center text-caption ml-n10">
+                    <div class="text-subtitle-1">Developing an effective strategy</div>
+                    <div>Five stages of progress: setting goals or objectives, analysis,</div>
+                    <div>strategy formation, strategy implementation, and strategy monitoring.</div>
+                </v-col>
+                <v-col class="d-flex flex-column align-center justify-center text-caption">
+                    <div class="text-subtitle-1">Software development process</div>
+                    <div>We employ 5 phases of software development process:</div>
+                    <div>research, ideation, design, development and iteration.</div>
+                </v-col>
+                <v-col class="d-flex flex-column align-center justify-center text-caption">
+                    <div class="text-subtitle-1">Automated testing and support</div>
+                    <div>Automate some repetitive but necessary tasks in formalized</div>
+                    <div>testing process already in place.  </div>
+                </v-col></v-row>
         </v-container>
-    </div>
+    
 </template>
 <style scoped>
 .moto{
