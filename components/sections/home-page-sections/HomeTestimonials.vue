@@ -1,3 +1,24 @@
+<script>
+export default{
+    data(){
+        return {
+            testimonials: [
+                {
+                    img: '',
+                    post: 'Marketing Manager',
+                    name: 'Luca Jacobs'
+                },
+                {
+                     img: '',
+                    post: 'CEO',
+                    name: 'Ram Sigdel'
+                }
+            ]
+        }
+    }
+}
+
+</script>
 <template>
     <div>
         <v-container fluid class="mt-16">
@@ -8,7 +29,38 @@
                 </v-col>
             </v-row>
             <v-row>
-                <v-col></v-col>
+                <v-col cols="1"></v-col>
+                <v-col>
+                    <v-carousel cycle
+                        :show-arrows="false"
+                        interval="5000"
+                        
+                        hide-delimiters>
+                        <v-carousel-item 
+                            v-for="(testimonial, index) in testimonials"
+                            :key="index"
+                        >
+                            <v-card elevation="0">
+                                <v-card-text class="ma-4">
+                                    <div class=" rounded-lg pa-12 text-subtitle-1 testimonial">
+                                        <p>
+                                            The best generator I could find because it optionally includes lists, formatting, blockquotes and a bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists Bacon Ipsum - If you want to make your client hungry
+                                        </p>
+                                    </div>
+                                    <div class="testimonial d-flex flex-column"></div>
+                                    <div class="d-flex text-subtitle-1">
+                                        <v-avatar size="70" class="mt-2">
+                                            <img src="../../../static/biralo.png" alt="">
+                                        </v-avatar>
+                                    
+                                            <p class="mt-4 ml-4">{{testimonial.name}} <br>{{testimonial.post}}</p>
+                                   </div>
+                                </v-card-text>
+                            </v-card>
+                        </v-carousel-item>
+                    </v-carousel>
+                </v-col>
+                <v-col cols="2"></v-col>
                 <v-col cols="5" class=" text-h3 font-weight-bold">
                     <div class="d-flex  justify-center">We use our focused set of</div>
                     <div class="d-flex  justify-center">capabilities to build </div>
@@ -19,3 +71,8 @@
         </v-container>
     </div>
 </template>
+<style scoped>
+    .testimonial{
+        background-color: rgba(0,0,0,0.1);
+    }
+</style>
