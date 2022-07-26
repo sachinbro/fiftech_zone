@@ -6,7 +6,7 @@
                     
                     <v-col class="">
                     <img src="../static/Footer/Group 318.png" alt="" class="px-16">
-                        <p class="mt-n10 pl-3">Digitalize your business with our product services. Let the world know where you stand in the market.</p>
+                        <p class="mt-n10 pl-3">Digitalize your business with our product services. Let the world know where you stand in the market</p>
                     </v-col>
                     <v-col>
                         <p class="text-h5 font-weight-bold">Get In Touch</p>
