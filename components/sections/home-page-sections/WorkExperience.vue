@@ -29,7 +29,7 @@
             </v-row>
         </v-col>
         <v-col class="d-flex align-center">
-            <img src="../../../static/sections/Homepage/Group 319.png" width="500px" height="300px" alt="">
+            <img src="../../../static/sections/Homepage/Group 319.png" width="500px" height="350px" alt="">
         </v-col>
     </v-row>
 </template>
