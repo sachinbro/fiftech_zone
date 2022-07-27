@@ -25,12 +25,12 @@
                             <p>Testimonials</p>
                         </div>
                     </v-col>
-                    <v-col class="">
+                    <v-col >
                         <p class="text-h5 font-weight-bold text-center">Follow us</p>
-                        <div class="px-2  d-flex justify-center">
-                            <v-icon dark large class="mx-2">mdi-facebook</v-icon>
-                            <v-icon dark large class="mx-2">mdi-instagram</v-icon>
-                            <v-icon dark large class="mx-2">mdi-linkedin</v-icon>
+                        <div class="px-2 ml-14">
+                            <v-icon dark large class="mx-3">mdi-facebook</v-icon>
+                            <v-icon dark large class="mx-3">mdi-instagram</v-icon>
+                            <v-icon dark large class="mx-3">mdi-linkedin</v-icon>
                         </div>
                         <div class="mt-8 ml-8">
                             <p class="text-left">
