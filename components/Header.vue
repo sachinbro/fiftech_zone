@@ -33,13 +33,15 @@
     color="navBackground"
     
     >   <div class="pl-16">
+        <nuxt-link to="/">
             <img class="" src="../static/icons/fiftechlogo.svg" height="70px">
+        </nuxt-link>
         </div>
             
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-row class="d-flex justify-space-around white--text" no-gutters>
-            <nuxt-link to="#" class="white--text link">About Us</nuxt-link>
+            <nuxt-link to="/about" class="white--text link">About Us</nuxt-link>
             <nuxt-link to="#" class="white--text link">Services</nuxt-link>
             <nuxt-link to="#" class="white--text link">Projects</nuxt-link>
             <nuxt-link to="#" class="white--text link">Testimonials</nuxt-link>
