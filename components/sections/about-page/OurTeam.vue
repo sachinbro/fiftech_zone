@@ -39,10 +39,12 @@
                     <v-avatar size="200"><img :src="require(`../../../static/${professional.img}`)" alt=""></v-avatar>
                     <p class="text-center text-h6">{{professional.name}} <br>{{professional.post}}</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                       <v-icon class="mx-2">mdi-facebook</v-icon>
-                        <v-icon class="mx-2">mdi-instagram</v-icon>
-                        <v-icon class="mx-2">mdi-linkedin</v-icon>
-                        <v-icon class="mx-2">mdi-twitter</v-icon>
+                    <div class="d-flex justify-center">
+                        <v-icon class="mx-2">mdi-facebook</v-icon>
+                         <v-icon class="mx-2">mdi-instagram</v-icon>
+                         <v-icon class="mx-2">mdi-linkedin</v-icon>
+                         <v-icon class="mx-2">mdi-twitter</v-icon>
+                        </div>
                     
                 </v-col>
                 

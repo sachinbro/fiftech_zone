@@ -42,11 +42,11 @@
         <v-spacer></v-spacer>
         <v-row class="d-flex justify-space-around white--text" no-gutters>
             <nuxt-link to="/about" class="white--text link">About Us</nuxt-link>
-            <nuxt-link to="#" class="white--text link">Services</nuxt-link>
-            <nuxt-link to="#" class="white--text link">Projects</nuxt-link>
-            <nuxt-link to="#" class="white--text link">Testimonials</nuxt-link>
-            <nuxt-link to="#" class="white--text link">Career</nuxt-link>
-            <nuxt-link to="#" class="white--text link">Contacts</nuxt-link>
+            <nuxt-link to="/services" class="white--text link">Services</nuxt-link>
+            <nuxt-link to="projects" class="white--text link">Projects</nuxt-link>
+            <nuxt-link to="/testimonials" class="white--text link">Testimonials</nuxt-link>
+            <nuxt-link to="/career" class="white--text link">Career</nuxt-link>
+            <nuxt-link to="/contact" class="white--text link">Contacts</nuxt-link>
         </v-row>
         
     </v-app-bar>
