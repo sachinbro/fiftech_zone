@@ -1,7 +1,6 @@
 <template>
-    
-        <v-container class="main" fluid>
-            <v-row no-gutters>
+        <v-container  fluid>
+            <v-row  class="background">
                 <v-col cols="1"></v-col>
                 <v-col cols="4">
                     <div class="moto mt-16 ml-5">
@@ -75,6 +74,14 @@
     
 </template>
 <style scoped>
+/* .background{
+    height: 100vh;
+    
+    background-image: url("../../../static/sections/Homepage/masked.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+} */
 .moto{
     font: normal normal bold 50px Segoe UI;
     width: 80%;
