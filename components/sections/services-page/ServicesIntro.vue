@@ -11,5 +11,6 @@
             <v-col cols="2"><img src="../../../static/sections/Servicespage/Image 40.png" height="200px" alt=""></v-col>
             <v-col cols="2"></v-col>
         </v-row>
+        <p class="text-h4 text-center"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
     </div>
 </template>
