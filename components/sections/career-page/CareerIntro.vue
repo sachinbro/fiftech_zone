@@ -4,6 +4,7 @@
             <v-col cols="1"></v-col>
             <v-col>
                 <p class="text-h4">Perspective <br>CAREER Start!</p>
+                <p>We provide wide range of professsional service to meet your needs.</p>
             </v-col>
             <v-col></v-col>
             <v-col><img src="../../../static/sections/Careerpage/Image 47.png" height="300px" alt=""></v-col>
@@ -13,5 +14,36 @@
         <p class="text-center text-secondary">
             Sample text. Click to select the text box. Click again or double click to start editing the text.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </p>
+        <v-row class="mt-16">
+            <v-col cols="1"></v-col>
+            <v-col>
+                <div class="pa-2 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color:#E9D1FF;">
+                    <div class="pa-10 rounded-circle" style="border: 1px solid #070707; background-color: white;">
+                    <p class="text-center">Faster growing company</p>
+                    <v-avatar size="150" left><img src="../../../static/sections/Careerpage/Image 46.png" alt=""/></v-avatar>
+                </div>
+                </div>
+                
+            </v-col>
+            <v-col cols="1"  class="d-flex align-center justify"><div style="border: 1px solid rgba(112, 112, 112, 1); width: 100%; "></div></v-col>
+            <v-col>
+                <div class="pa-2 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color:#E9D1FF;">
+                    <div class="pa-12 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color: white;">
+                    <p class="text-center">Great Collegues</p>
+                    <v-avatar size="150"><img src="../../../static/sections/Careerpage/Image 49.png" alt=""/></v-avatar>
+                </div>
+                </div>
+            </v-col>
+            <v-col cols="1"  class="d-flex align-center justify"><div style="border: 1px solid rgba(112, 112, 112, 1); width: 100%; "></div></v-col>
+            <v-col>
+                <div class="pa-2 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color:#E9D1FF;">
+                    <div class="pa-10 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color: white;">
+                    <p class="text-center">Take Charge</p>
+                    <v-avatar size="150" left><img src="../../../static/sections/Careerpage/Image 46.png" alt=""/></v-avatar>
+                </div>
+                </div>
+            </v-col>
+            <v-col cols="1"></v-col>
+        </v-row>
     </div>
 </template>
