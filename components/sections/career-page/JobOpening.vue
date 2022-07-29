@@ -1,7 +1,12 @@
 <script>
 export default{
+    mounted(){
+        this.validate()
+    },
     data(){
         return {
+            isSubmited: false,
+          
             jobs: [
                 {
                     id: 1,
@@ -40,13 +45,55 @@ export default{
                     ]
 
                 }
-            ]
+            ],
+            valid: true,
+                name: '',
+                nameRules: [
+                    v => !!v || 'Name is required',
+                    v => (v && v.length <= 30) || 'Name must be less than 10 characters',
+                ],
+                email: '',
+                emailRules: [
+                    v => !!v || 'E-mail is required',
+                    v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
+                ],
+                phone: '',
+                phoneRules: [
+                    v => !!v || 'Phone is required',
+                    v => /^\d{10}$/.test(v) || 'Phone must be valid',
+                ],
+                select: null,
+                items: [
+                    'Backend Developer',
+                    'Frontend Developer',
+                    'Full Stack Developer',
+                    'React-Native Developer',
+                ],
+                checkbox: false,
         }
-    }
+    },
+    methods: {
+      validate () {
+        this.$refs.form.validate()
+      },
+      reset () {
+        this.$refs.form.reset()
+      },
+      resetValidation () {
+        this.$refs.form.resetValidation()
+      },
+        submit () {
+            this.$refs.form.validate()
+            if (this.valid) {
+                this.isSubmited = true;
+                console.log(this.name,this.email,this.phone, this.select, this.checkbox);
+            }
+        },
+    },
 }
 </script>
 <template>
-<div class="ma-10">
+<div v-if="jobs" class="ma-10">
     <div class="text-center mt-16">
         <p class="text-h6 font-weight-semibold">Job Openings</p>
         <p class="text--secondary text-subtitle-1">Sample text. Click to select the text box. Click again or double click to start editing the text.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -82,8 +129,96 @@ export default{
         </v-col>
         <v-col></v-col>
        </v-row> 
-    </div>
+           </div>
+        <v-row v-if="!isSubmited" class="text-h5 font-weight-bold flex-column mt-16">
+           
+            <div class="text-center mb-2">Apply Now</div>
+            <div class="text-h5 text-center">Add your talent and experience to our growing team!</div>
+        </v-row>
+        <v-row v-else></v-row>
+        <v-row>
+            <v-col cols="3">
+
+            </v-col>
+            <v-col v-if="!isSubmited" cols="6" class="rounded-xl  mt-8  px-10 elevation-2" style="border: 1px solid black">
+                <v-form  
+                        @submit="submit"
+                        ref="form"
+                        v-model="valid"
+                        lazy-validation
+                    >
+                        <v-text-field
+                        v-model="name"
+                        :counter="30"
+                        :rules="nameRules"
+                        label="Full Name"
+                        required
+                        ></v-text-field>
+
+                        <v-text-field
+                        v-model="email"
+                        :rules="emailRules"
+                        label="E-mail"
+                        required
+                        ></v-text-field>
+                        
+                        <v-text-field
+                        v-model="phone"
+                        :rules="phoneRules"
+                        label="Phone"
+                        :counter="10"
+                        required
+                        ></v-text-field>
+
+                        <v-select
+                        v-model="select"
+                        :items="items"
+                        :rules="[v => !!v || 'Item is required']"
+                        label="Post"
+                        required
+                        ></v-select>
+
+                        <v-file-input
+                        label="CV/Resume"
+                        truncate-length="15"
+                        ></v-file-input>
+
+                        <v-checkbox
+                        v-model="checkbox"
+                        :rules="[v => !!v || 'You must agree to continue!']"
+                        label="I have read and agree to the terms and conditions"
+                        required
+                        ></v-checkbox>
+
+                        <v-btn
+                        :disabled="!valid"
+                        color="success"
+                        class="mr-4"
+                        @click="submit"
+                        >
+                        Submit
+                        </v-btn>
+
+                        <v-btn
+                        color="error"
+                        class="mr-4"
+                        @click="reset"
+                        >
+                        Reset Form
+                        </v-btn>
+                </v-form>
+            </v-col>
+        <v-col v-else class="ma-16 text-h4">
+            Application Registered Successfully!
+        </v-col>
+        <v-col cols="3"></v-col>
+       </v-row>
+
 </div>
+<v-row v-else class="pa-10 justify-center">
+    <p class="text-h6 text-center">Sorry, there are no recent openings. Keep in touch for more information!</p>
+    <img src="../../../static/sections/Careerpage/undraw_Cancel_re_pkdm.png" height="300px" alt="">
+</v-row>
 </template>
 <style scoped>
     .v-btn{
