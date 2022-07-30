@@ -1,8 +1,8 @@
 <template>
             <v-row>
                 <v-col cols="2"></v-col>
-                <v-col>
-                    <v-card max-width="600px" elevation="5">
+                <v-col >
+                    <v-card max-width="600px" class="vision" elevation="5">
                     <v-card-title class="justify-center ">
                         Our vision
                     </v-card-title>
@@ -21,9 +21,9 @@
 
                 </v-col>
                  <v-col>
-                    <v-card max-width="600px" elevation="8">
+                    <v-card max-width="600px" elevation="8" class="mission">
                     <v-card-title class="justify-center">
-                        Our vision
+                        Our Mission
                     </v-card-title>
                     <div class="d-flex justify-center">
                         <img
@@ -39,3 +39,29 @@
                 <v-col cols="2"></v-col>
             </v-row>
 </template>
+<style scoped>
+.vision:hover{
+    animation: transform 0.5s forwards;
+
+    
+}
+.mission:hover{
+    animation: transform1 0.5s forwards;
+}
+@keyframes transform {
+        0%{
+            right: 0px;
+        }
+        50%, 100%{
+            right: -50px;
+        }
+    }
+@keyframes transform1 {
+        0%{
+            left: 0px;
+        }
+        50%, 100%{
+            left: -50px;
+        }
+    }
+</style>

@@ -21,11 +21,11 @@ export default{
 </script>
 <template>
     <div>
-        <v-container fluid class="mt-16">
+        <v-container fluid class="mt-sm-16">
             <v-row>
-                <v-col cols="1"></v-col>
-                <v-col>
-                    <div class="text-h4 font-weight-bold">Testimonials</div>
+                <v-col cols="0" sm="1"></v-col>
+                <v-col class="text-center text-md-left">
+                    <div class="text-h4  font-weight-bold">Testimonials</div>
                 </v-col>
             </v-row>
             <v-row>
@@ -33,7 +33,7 @@ export default{
                 <v-col>
                     <v-carousel cycle
                         :show-arrows="false"
-                        interval="5000"
+                        interval="6000"
                         
                         hide-delimiters>
                         <v-carousel-item 
@@ -41,8 +41,8 @@ export default{
                             :key="index"
                         >
                             <v-card elevation="0">
-                                <v-card-text class="ma-4">
-                                    <div class=" rounded-lg pa-12 text-subtitle-1 testimonial">
+                                <v-card-text class="ma-sm-4">
+                                    <div class=" rounded-lg pa-sm-12 pa-4 text-subtitle-1 testimonial">
                                         <p>
                                             The best generator I could find because it optionally includes lists, formatting, blockquotes and a bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists Bacon Ipsum - If you want to make your client hungry
                                         </p>
@@ -61,11 +61,11 @@ export default{
                     </v-carousel>
                 </v-col>
                 <v-col cols="2"></v-col>
-                <v-col cols="5" class=" text-h3 font-weight-bold">
-                    <div class="d-flex  justify-center">We use our focused set of</div>
-                    <div class="d-flex  justify-center">capabilities to build </div>
-                    <div class="d-flex  justify-center">great experiences.</div>
-                    <div class="d-flex justify-center text-subtitle-1 text--secondary">We are as good as they say we are.</div>
+                <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold">
+                    <div >We use our focused set of</div>
+                    <div >capabilities to build </div>
+                    <div >great experiences.</div>
+                    <div class=" text-subtitle-1 text--secondary">We are as good as they say we are.</div>
                 </v-col>
             </v-row>
         </v-container>

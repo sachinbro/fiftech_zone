@@ -36,10 +36,10 @@
 <template>
     <v-row class="projectinfo pa-4">
         <v-col cols="1"></v-col>
-        <v-col class="white--text text-h2 font-weight-bold">
-            <div>We deliver the</div>
-            <div>SOFTWARE you need,</div>
-            <div>no more, no less.</div>
+        <v-col class=" white--text text-h2 font-weight-bold">
+            <div class="d-none d-sm-block">We deliver the</div>
+            <div class="d-none d-sm-block">SOFTWARE you need,</div>
+            <div class="d-none d-sm-block">no more, no less.</div>
             <v-row class="text-subtitle-1">
                 <v-col>
                     <div @click="initiateAnimation()">
@@ -73,7 +73,7 @@
                 </v-col>
             </v-row>
         </v-col>
-        <v-col class="d-flex justify-end">
+        <v-col class="d-sm-flex d-none  justify-end">
             <img src="../../../static/sections/Homepage/banner_img.png" height="500px" width="500px" alt="">
         </v-col>
         <v-col cols="1"></v-col>

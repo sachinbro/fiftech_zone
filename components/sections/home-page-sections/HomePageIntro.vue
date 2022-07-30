@@ -1,35 +1,42 @@
 <template>
         <v-container  fluid>
             <v-row  class="background">
-                <v-col cols="1"></v-col>
-                <v-col cols="4">
-                    <div class="moto mt-16 ml-5">
+                <v-col cols="1" class="hidden-sm-and-down"></v-col>
+                <v-col cols="6" sm="4">
+                    <div class="hidden-sm-and-down text-h2 font-weight-medium mt-16 ml-sm-5">
                         <div>GO DIGITAL,</div>
                         <div>LIVE SMART.</div>
                     </div>
-                    <div class="mt-6 text--bold">
+                    <div class="hidden-md-and-up text-h4 font-weight-medium mt-16 ml-sm-5">
+                        <div>GO DIGITAL,</div>
+                        <div>LIVE SMART.</div>
+                    </div>
+                    <div class="mt-0 mt-sm-6 text--bold">
                         <div>Digitalize your business with our product services.</div>
                         <div> Let the world know where you stand in the market.</div>
                     </div>
                 </v-col>
-                <v-col cols="7">
-                    <img src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
+                <v-col cols="7" class="hidden-sm-and-down">
+                    <img class="hidden-sm-and-down" src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
+                </v-col>
+                <v-col class="hidden-md-and-up mr-n16" cols="4">
+                    <img  src="../../../static/landing area image.svg" width="400px" height="400px" alt="" >
                 </v-col>
             </v-row>
-            <v-row class="d-flex justify-center" >
+            <v-row class="d-none d-sm-flex  justify-center" >
                 <div style="font-size: 25px;" >
                     <span style="color: #B051E0; ">Learn More </span><span style="color:#ABB8C3;">about fiftech's unique features.</span>
                 </div>
             </v-row>
-            <v-row class="d-flex flex-column font-weight-bold justify-center align-center" >
-                <div style="color:#3D2F2F; font-size: 35px;">Discover how we work</div>
-                <div style="color:#3D2F2F; font-size: 35px;"> to deliver outstanding results.</div>
+            <v-row class="d-none d-sm-flex flex-column font-weight-bold text-h4 justify-center align-center" >
+                <div style="color:#3D2F2F; ">Discover how we work</div>
+                <div style="color:#3D2F2F; "> to deliver outstanding results.</div>
             </v-row>
-            <v-row class="white--text">
+            <v-row class="white--text d-none d-sm-flex" >
                 <v-col cols="1"></v-col>
                 <v-col class="tasks" cols="1">
                     <v-card elevation="0" height="" >
-                        <v-card-text class=" rounded-circle text-center">
+                        <v-card-text class=" rounded-circle  hoverEffect text-center">
                             <div class="multilayer-circle white--text"> 
                                 1
                             </div>
@@ -37,8 +44,8 @@
                     </v-card> 
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
-                <v-col cols="1">
-                    <v-card-text class=" rounded-circle text-center">
+                <v-col cols="1" >
+                    <v-card-text class=" rounded-circle text-center  hoverEffect">
                         <div class="multilayer-circle ">
                             2
                         </div>
@@ -46,7 +53,7 @@
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1">
-                    <v-card-text class=" rounded-circle text-center">
+                    <v-card-text class=" rounded-circle  text-center  hoverEffect">
                         <div class="multilayer-circle ">
                             3
                         </div>
@@ -54,7 +61,7 @@
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
-            <v-row>
+            <v-row class="d-none d-sm-flex">
                 <v-col class="d-flex flex-column align-center justify-center text-caption ml-n10">
                     <div class="text-subtitle-1">Developing an effective strategy</div>
                     <div>Five stages of progress: setting goals or objectives, analysis,</div>
@@ -70,6 +77,63 @@
                     <div>Automate some repetitive but necessary tasks in formalized</div>
                     <div>testing process already in place.  </div>
                 </v-col></v-row>
+            <v-row class="d-flex d-sm-none">
+                <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
+                    <v-card elevation="0" height="">
+                        <v-card-text class=" rounded-circle  text-center">
+                            <div class="multilayer-circle white--text"> 
+                                1
+                            </div>
+                        </v-card-text>
+                    </v-card> 
+                </v-col>
+               
+            </v-row>
+            <v-row class="d-flex d-sm-none">
+                <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
+                    <div class="text-subtitle-1">Developing an effective strategy</div>
+                    <div>Five stages of progress: setting goals or objectives, analysis,</div>
+                    <div>strategy formation, strategy implementation, and strategy monitoring.</div>
+                </v-col>
+            </v-row>
+            <v-row class="d-flex d-sm-none">
+                <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
+                    <v-card elevation="0" height="">
+                        <v-card-text class=" rounded-circle  text-center">
+                            <div class="multilayer-circle white--text"> 
+                                2
+                            </div>
+                        </v-card-text>
+                    </v-card> 
+                </v-col>
+               
+            </v-row>
+            <v-row class="d-flex d-sm-none">
+                <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
+                    <div class="text-subtitle-1">Software development process</div>
+                    <div>We employ 5 phases of software development process:</div>
+                    <div>research, ideation, design, development and iteration.</div>
+                </v-col>
+            </v-row>
+            <v-row class="d-flex d-sm-none">
+                <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
+                    <v-card elevation="0" height="">
+                        <v-card-text class=" rounded-circle  text-center">
+                            <div class="multilayer-circle white--text"> 
+                                3
+                            </div>
+                        </v-card-text>
+                    </v-card> 
+                </v-col>
+               
+            </v-row>
+            <v-row class="d-flex d-sm-none">
+                <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
+                     <div class="text-subtitle-1">Automated testing and support</div>
+                    <div>Automate some repetitive but necessary tasks in formalized</div>
+                    <div>testing process already in place.  </div>
+                </v-col>
+            </v-row>
         </v-container>
     
 </template>
@@ -94,9 +158,26 @@
   margin: 3em;
   background-color: rgba(155, 81, 224, 1);
 }
+ .hoverEffect:hover{
+    animation: scale 0.5s forwards;
+}
 .horizontal-line{
     border-bottom: 1px solid #ABB8C3;
     height: 80px;
+}
+
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+    
 }
 
 </style>
