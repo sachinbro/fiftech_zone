@@ -54,19 +54,6 @@ export default {
 <template>
     <div class="mt-12">
         <div>
-            <v-row class="my-10">
-                <v-col cols="4"></v-col>
-                <v-col cols="6">
-                    <p class="text-h4 text-left">Our Plans for Web Development</p>
-                    <ul class="text-left text-subtitle-2 font-weight-light text--secondary">
-                    <li>  All package includes domain and hosting charges (terms applicable*)  </li>
-                    <li>  Annual maintenance chage (AMC) is 15% excluding domain and hosting renewal <br> charge with applicable inflation rate. </li>
-                    <li>AMC charge is free for additional 1 year. (promotional offer*)</li>
-                    <li>All the prices are exclusive of taxes</li>
-                    </ul>
-                </v-col>
-                <v-col cols="2"></v-col>
-            </v-row>
             <v-row class="my-16">
                 <v-col cols="4"></v-col>
                 <v-col class="text-center" cols="3">

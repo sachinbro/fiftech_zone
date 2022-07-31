@@ -40,7 +40,7 @@ export default{
     methods: {
         onScroll(e){
             this.scroll = e.target.documentElement.scrollTop
-            console.log("scroll", e.target.documentElement.scrollTop);
+            // console.log("scroll", e.target.documentElement.scrollTop);
         },
         
     },
@@ -104,17 +104,16 @@ export default{
             <v-app-bar-nav-icon  @click.stop="drawer= !drawer" ></v-app-bar-nav-icon>
             <v-navigation-drawer
             v-model="drawer"
-            class="white black--text  navigation-drawer"
-            style="background-color: white; "
+            class=" black--text  navigation-drawer"
+           
             height="400"
             width="400"
-            overlay-opacity="0.1"
-            
             app
             right
             temporary
             >
-            <div class="navBackground white--text d-flex align-center text-h5"> <nuxt-link to="/"><img src="../static/icons/fiftechlogo.svg" alt=""></nuxt-link> <span class="ml-n4"> iftechZone</span> </div>
+            <v-card dark>
+                <div class="navBackground white--text d-flex align-center text-h5"> <nuxt-link to="/"><img src="../static/icons/fiftechlogo.svg" alt=""></nuxt-link> <span class="ml-n4"> iftechZone</span> </div>
             <v-list>
                 <v-list-item-group>
                     <v-list-item v-for="link in links" :key="link.url" style="border: 1px #DCD4D4 solid;">
@@ -132,6 +131,8 @@ export default{
                 </v-list-item-group>
                 
             </v-list>
+            </v-card>
+            
             </v-navigation-drawer>
         </v-row>
         
