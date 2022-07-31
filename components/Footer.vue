@@ -2,7 +2,7 @@
 <div>
         <div class="purple">
             <div class="footer-main white--text">
-                <v-row>
+                <v-row class="d-none d-sm-flex">
                     
                     <v-col class="">
                     <img src="../static/Footer/Group 318.png" alt="" class="px-16">
@@ -43,6 +43,11 @@
                         </div>
                     </v-col>
                     <v-col cols="1"></v-col>
+                </v-row>
+                <v-row class="ml-10 d-flex d-sm-none flex-column">
+                    <p class="text-h4 font-weight-medium">Get in Touch</p>
+                    <img src="../static/Footer/Group 318.png" alt="" height="100px" width="100px" class="left">
+                    <p class="mt-n4 text-caption">Digitize your business with our product service. <br> Let the world know where you stand in the market</p>
                 </v-row>
             </div>
         </div>
