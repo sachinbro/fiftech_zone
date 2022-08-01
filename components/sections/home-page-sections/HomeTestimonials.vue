@@ -21,7 +21,7 @@ export default{
 </script>
 <template>
     <div>
-        <v-container fluid class="mt-sm-16">
+        <v-container fluid class="mt-sm-16" id="testimonials">
             <v-row>
                 <v-col cols="0" sm="1"></v-col>
                 <v-col class="text-center text-md-left">

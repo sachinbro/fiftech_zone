@@ -19,3 +19,9 @@ export default {
     components: { Header, Footer }
 }
 </script>
+<style scoped>
+    .v-application {
+   font-family: Segoe UI , sans-serif !important;
+   
+ }
+</style>

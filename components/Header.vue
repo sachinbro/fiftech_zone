@@ -2,8 +2,8 @@
 export default{
     created () {
     window.addEventListener('scroll', this.onScroll);
-    
   },
+  
     data(){
         return {
             scroll: 0,
@@ -48,7 +48,8 @@ export default{
         makeSticky(){
             return this.scroll > 50;
         }
-    }
+    },
+
 }
 </script>
 <template>
@@ -95,8 +96,8 @@ export default{
         <v-row class="d-none d-sm-flex justify-space-around white--text " no-gutters>
             <nuxt-link to="/about" class="white--text link">About Us</nuxt-link>
             <nuxt-link to="/services" class="white--text link">Services</nuxt-link>
-            <nuxt-link to="projects" class="white--text link">Projects</nuxt-link>
-            <nuxt-link to="/testimonials" class="white--text link">Testimonials</nuxt-link>
+            <nuxt-link to="/projects" class="white--text link">Projects</nuxt-link>
+            <nuxt-link to="/#testimonials" class="white--text link">Testimonials</nuxt-link>
             <nuxt-link to="/career" class="white--text link">Career</nuxt-link>
             <nuxt-link to="/contact" class="white--text link">Contacts</nuxt-link>
         </v-row>
