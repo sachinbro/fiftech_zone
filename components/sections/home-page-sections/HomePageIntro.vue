@@ -1,8 +1,9 @@
 <template>
+<div>
         <v-container  fluid>
             <v-row  class="background">
-                <v-col cols="1" class="hidden-sm-and-down"></v-col>
-                <v-col cols="6" sm="4">
+                <!-- <v-col cols="1" class="hidden-sm-and-down"></v-col> -->
+                <v-col cols="6" lg="6" md="6" align="center" class="white--text">
                     <div class="hidden-sm-and-down text-h2 font-weight-medium mt-16 ml-sm-5">
                         <div>GO DIGITAL,</div>
                         <div>LIVE SMART.</div>
@@ -11,12 +12,12 @@
                         <div>GO DIGITAL,</div>
                         <div>LIVE SMART.</div>
                     </div>
-                    <div class="mt-0 mt-sm-6 text--bold">
+                    <div class="mt-0 mt-sm-6 text-h6 text--bold">
                         <div>Digitalize your business with our product services.</div>
                         <div> Let the world know where you stand in the market.</div>
                     </div>
                 </v-col>
-                <v-col cols="7" class="hidden-sm-and-down">
+                <v-col cols="6" class="hidden-sm-and-down">
                     <img class="hidden-sm-and-down" src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
                 </v-col>
                 <v-col class="hidden-md-and-up mr-n16" cols="4">
@@ -32,12 +33,12 @@
                 <div style="color:#3D2F2F; ">Discover how we work</div>
                 <div style="color:#3D2F2F; "> to deliver outstanding results.</div>
             </v-row>
-            <v-row class="white--text d-none d-sm-flex" >
+            <v-row class="white--text  d-none d-sm-flex" >
                 <v-col cols="1"></v-col>
                 <v-col class="tasks" cols="1">
                     <v-card elevation="0" height="" >
                         <v-card-text class=" rounded-circle  hoverEffect text-center">
-                            <div class="multilayer-circle white--text"> 
+                            <div class="multilayer-circle font-weight-bold white--text"> 
                                 1
                             </div>
                         </v-card-text>
@@ -45,7 +46,7 @@
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1" >
-                    <v-card-text class=" rounded-circle text-center  hoverEffect">
+                    <v-card-text class=" rounded-circle text-center font-weight-bold hoverEffect">
                         <div class="multilayer-circle ">
                             2
                         </div>
@@ -53,7 +54,7 @@
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1">
-                    <v-card-text class=" rounded-circle  text-center  hoverEffect">
+                    <v-card-text class=" rounded-circle  text-center font-weight-bold  hoverEffect">
                         <div class="multilayer-circle ">
                             3
                         </div>
@@ -135,17 +136,20 @@
                 </v-col>
             </v-row>
         </v-container>
+        </div>
+
     
 </template>
 <style scoped>
-/* .background{
+.background{
     height: 100vh;
     
-    background-image: url("../../../static/sections/Homepage/masked.png");
+    background-image: url("../../../static/sections/masked1.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     background-position: center;
-} */
+    background-origin: content-box;
+}
 .moto{
     font: normal normal bold 50px Segoe UI;
     width: 80%;

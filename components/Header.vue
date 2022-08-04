@@ -33,6 +33,31 @@ export default{
                     name: 'Contact Us',
                     url: '/contact'
                 }
+            ],
+            socialIcons: [
+                "facebook", "twitter", "instagram",
+            ],
+            links: [
+                {
+                    name: 'About Us',
+                    url: '/about'
+                },
+                    {
+                        name: 'Services',
+                        url: '/services'
+                    },
+                {
+                    name: 'Testimonials',
+                    url: '/#testimonials'
+                },
+                {
+                    name: 'Career',
+                    url: '/career'
+                },
+                {
+                    name: 'Contact Us',
+                    url: '/#contact'
+                }
             ]
         }
 
@@ -55,15 +80,15 @@ export default{
 <template>
 <div >
     <v-app-bar  elevation="4"  height="50"   color="navBackground" >
-        <div class="d-flex align-start mb-3" >
-            <img src="../static/icons/fb.svg" width="25" height="25" alt="">
-            <img src="../static/icons/twitter.svg" width="25" height="25" alt="">
-            <img src="../static/icons/insta.svg" width="25" height="25" alt="">
+        <div class="d-flex align-start mb-3 ">
+            <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
+            
         </div>
         
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
-        <v-row class="d-flex justify-space-around mb-4 ">
+        <v-spacer></v-spacer>
+        <v-row class="d-flex justify-space-around mb-4 mt-2 ">
             <div>
                 <v-icon color="white">mdi-phone</v-icon>
                 <span class="white--text text-caption hidden-sm-and-down">9846907090</span>
@@ -77,6 +102,7 @@ export default{
                 <span class="white--text text-caption hidden-sm-and-down">10 A.M to 5 P.M</span>
             </div>
         </v-row>
+        <v-spacer></v-spacer>
     </v-app-bar>
     <v-app-bar 
     class="sticky "
@@ -93,14 +119,12 @@ export default{
             
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
-        <v-row class="d-none d-sm-flex justify-space-around white--text " no-gutters>
-            <nuxt-link to="/about" class="white--text link">About Us</nuxt-link>
-            <nuxt-link to="/services" class="white--text link">Services</nuxt-link>
-            <nuxt-link to="/projects" class="white--text link">Projects</nuxt-link>
-            <nuxt-link to="/#testimonials" class="white--text link">Testimonials</nuxt-link>
-            <nuxt-link to="/career" class="white--text link">Career</nuxt-link>
-            <nuxt-link to="/contact" class="white--text link">Contacts</nuxt-link>
+        <v-spacer></v-spacer>
+        <v-row class="d-none d-sm-flex justify-space-around white--text" no-gutters>
+            <nuxt-link v-for="link in links" :key="link.title" :to="`${link.url}`" class="white--text link">{{link.name}}</nuxt-link>
+            
         </v-row>
+        <v-spacer></v-spacer>
         <v-row class="d-flex d-sm-none navigation-drawer justify-end align-middle">
             <v-app-bar-nav-icon  @click.stop="drawer= !drawer" ></v-app-bar-nav-icon>
             <v-navigation-drawer
@@ -149,7 +173,7 @@ export default{
        font: normal normal bold 15px Segoe UI;
         text-decoration: none;
         border-radius: 20px;
-        padding: 2px;
+        padding: 3px;
     }
      .link:hover{
         background-color: white;

@@ -1,14 +1,14 @@
 <template>
-    <v-container class="mt-0 mt-md-16">
+    <div class="mt-0 mt-md-16">
         <v-row class="d-flex justify-center text-h6 text-md-h4  font-weight-bold ml-md-n16">
             What We Offer
         </v-row>
         <v-card class="mt-2 mt-sm-10 rounded-xl" >
             <v-row> 
-                    <v-col cols="12" sm="6" style="border-right: 1px solid #707070;">
+                    <v-col cols="12" align="center" sm="6" style="border-right: 1px solid #707070;">
                         
-                        <v-row no-gutters>
-                            <v-col cols="4">
+                        <v-row no-gutters align="">
+                            <v-col cols="4" align="">
                             <img src="../../../static/sections/Homepage/offering2.svg" height="150px" width="130px" alt="">
                         </v-col>
                         <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-n10">
@@ -66,5 +66,5 @@
                 </v-col>
             
         </v-row>
-    </v-container>
+    </div>
 </template>
