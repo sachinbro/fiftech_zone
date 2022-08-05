@@ -1,8 +1,8 @@
 <template>
     <div>
-        <v-row class="mt-6">
+        <v-row class="background white--text font-weight-bold">
             <v-col cols="1"></v-col>
-                <v-col class="mt-6">
+                <v-col class="mt-16">
                     <p class="text-h4 font-weight-bold">About FiftechZone</p>
                     <v-row>
                         <v-col cols="8">
@@ -11,10 +11,19 @@
                         <v-col></v-col>
                     </v-row>
                 </v-col>
-                <v-col>
-                    <img src="../../../static/sections/Aboutpage/about.png" alt="" height="200px" width="450px">
+                <v-col align="center" class="mt-16">
+                    <img src="../../../static/sections/Aboutpage/about.png" alt="" height="200px">
                 </v-col>
             
         </v-row>
     </div>
 </template>
+<style scoped>
+.background{
+    background-image: url("../../../static/maskedother.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: top;
+    background-origin: content-box;
+}
+</style>

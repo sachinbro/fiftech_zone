@@ -61,11 +61,15 @@ export default{
                     </v-carousel>
                 </v-col>
                 <v-col cols="2"></v-col>
-                <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold">
+                <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold mt-16">
                     <div >We use our focused set of</div>
                     <div >capabilities to build </div>
                     <div >great experiences.</div>
-                    <div class=" text-subtitle-1 text--secondary">We are as good as they say we are.</div>
+                    <div class="mt-2 text-h6 font-weight-light text--secondary">We are as good as they say we are.</div>
+                    <div class="pa-4">
+                            <v-icon x-large style="border: 1px solid black;"  class="rounded-lg pa-1 mx-3">mdi-chevron-left</v-icon>                     
+                            <v-icon x-large style="border: 1px solid black;"  class="rounded-lg pa-1">mdi-chevron-right</v-icon>                     
+                   </div>
                 </v-col>
             </v-row>
         </v-container>

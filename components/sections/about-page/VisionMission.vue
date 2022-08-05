@@ -1,5 +1,5 @@
 <template>
-            <v-row>
+            <v-row class="mt-10">
                 <v-col cols="2"></v-col>
                 <v-col >
                     <v-card max-width="600px" class="vision" elevation="5">

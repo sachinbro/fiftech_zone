@@ -36,7 +36,7 @@
 <template>
     <v-row class="projectinfo pa-4">
         <v-col cols="1"></v-col>
-        <v-col class=" white--text text-h2 font-weight-bold">
+        <v-col class=" white--text text-h3 font-weight-bold">
             <div class="d-none d-sm-block">We deliver the</div>
             <div class="d-none d-sm-block">SOFTWARE you need,</div>
             <div class="d-none d-sm-block">no more, no less.</div>
