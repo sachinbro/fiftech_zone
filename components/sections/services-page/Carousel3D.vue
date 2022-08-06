@@ -76,12 +76,14 @@ export default{
 </script>
 <template>
 <div>
+        <p class="text-h4 text-center"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
        <v-row class="mt-10">
         <v-col cols="1"></v-col>
         <v-col>
             <Carousel3d :controls-visible="true" 
+            class=""
             @after-slide-change="afterChange"
-            height="400" width="350" :border="10">
+            height="400" width="350" :border="10" space="270">
             <Slide 
             class="white elevation-10 rounded-lg"
             v-for="(item, index) in items"

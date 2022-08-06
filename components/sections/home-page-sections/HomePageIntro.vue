@@ -1,6 +1,6 @@
 <template>
 <div>
-        <v-container  fluid>
+        <v-container  fluid class="mt-n1">
             <v-row  class="background">
                 <!-- <v-col cols="1" class="hidden-sm-and-down"></v-col> -->
                 <v-col cols="6" lg="6" md="6" align="center" class="white--text">

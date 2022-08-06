@@ -63,7 +63,9 @@ export default {
                             <ul class="text-left">
                                 <li v-for="plan in plans.basic" :key="plan" class="my-1">{{plan}}</li>
                             </ul>
-                           <PriceBtn price="20,000"/>
+                            <span class="ml-n16 mt-2">
+                                <PriceBtn price="20,000"/>
+                            </span>
                         </v-col>
                         
                     </v-row>
@@ -101,7 +103,9 @@ export default {
                             <ul class="text-left">
                                 <li v-for="plan in plans.premium" :key="plan" class="my-1">{{plan}}</li>
                             </ul>
-                            <PriceBtn price="100,000"/>
+                            <span class="ml-n16 mt-3">
+                                <PriceBtn price="100,000"/>
+                            </span>
                         </v-col>
                         
                     </v-row>
