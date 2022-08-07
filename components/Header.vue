@@ -3,40 +3,20 @@ export default{
     created () {
     window.addEventListener('scroll', this.onScroll);
   },
+  mounted(){
+     
+
+  },
   
     data(){
         return {
             scroll: 0,
+            target: "#testimonials",
             drawer: false,
-            links: [
-                {
-                    name: 'About Us',
-                    url: '/about'
-                },
-                    {
-                        name: 'Services',
-                        url: '/services'
-                    },
-                {
-                    name: 'Projects',
-                    url: '/projects'
-                },
-                {
-                    name: 'Testimonials',
-                    url: '/testimonials'
-                },
-                {
-                    name: 'Career',
-                    url: '/career'
-                },
-                {
-                    name: 'Contact Us',
-                    url: '/contact'
-                }
-            ],
             socialIcons: [
                 "facebook", "twitter", "instagram",
             ],
+
             links: [
                 {
                     name: 'About Us',
@@ -56,7 +36,7 @@ export default{
                 },
                 {
                     name: 'Contact Us',
-                    url: '/#contact'
+                    url: '/#footer'
                 }
             ]
         }
@@ -72,19 +52,20 @@ export default{
     computed:{
         makeSticky(){
             return this.scroll > 50;
-        }
+        },
+        
     },
+    
 
 }
 </script>
 <template>
 <div >
-    <v-app-bar  elevation="4"  height="50"   color="navBackground" >
+    <v-app-bar  elevation="0"  height="50"   class="navBackground" >
         <div class="d-flex align-start mb-3 ">
             <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
             
         </div>
-        
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
@@ -105,11 +86,11 @@ export default{
         <v-spacer></v-spacer>
     </v-app-bar>
     <v-app-bar 
-    class="sticky "
+    class="sticky navBackground "
     :app="makeSticky"
+    elevation="0"
     height="70"
     dark
-    color="navBackground"
     
     >   <div class="pl-16">
         <nuxt-link to="/">
@@ -130,7 +111,7 @@ export default{
             <v-navigation-drawer
             v-model="drawer"
             class=" black--text  navigation-drawer"
-           
+           elevation="0"
             height="400"
             width="400"
             app
@@ -167,8 +148,8 @@ export default{
 </template>
 <style scoped>
     .navBackground {
-       background: transparent linear-gradient(10deg, #9B51E0 0%, #347FE2 76%, #0693E3 100%) 0% 0% no-repeat padding-box;
-           }
+       background: transparent linear-gradient(10deg,  #0693E3 0%, #347FE2 36%, #9B51E0 100%) 0% 0% no-repeat padding-box;
+    }
     .link{
        font: normal normal bold 15px Segoe UI;
         text-decoration: none;

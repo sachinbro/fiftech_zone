@@ -1,12 +1,11 @@
 <script>
 export default{
     mounted(){
-        this.validate()
+        //  this.validate();
     },
     data(){
         return {
             isSubmited: false,
-          
             jobs: [
                 {
                     id: 1,
@@ -46,7 +45,7 @@ export default{
 
                 }
             ],
-            valid: true,
+            valid: false,
                 name: '',
                 nameRules: [
                     v => !!v || 'Name is required',
@@ -82,8 +81,8 @@ export default{
       resetValidation () {
         this.$refs.form.resetValidation()
       },
-        submit () {
-            this.$refs.form.validate()
+       async submit () {
+            await this.validate();
             if (this.valid) {
                 this.isSubmited = true;
                 console.log(this.name,this.email,this.phone, this.select, this.checkbox);

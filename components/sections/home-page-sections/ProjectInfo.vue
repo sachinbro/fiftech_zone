@@ -8,6 +8,7 @@
             totalSteps: 100,
             totalProject: 0,
             customerSatisfaction: 0,
+            isIntersection: false
             }
         },
 
@@ -16,19 +17,27 @@
         },
         methods: {
             initiateAnimation(){
-                console.log("initialAnimation");
-                if(this.completedSteps > 10){
-                    this.completedSteps = 10;
-                    console.log("reset", this.completedSteps);
-                    return 
-                }
-                
                 this.completedSteps = 50;
-                this.totalSteps = 100;
                 this.totalProject = 50;
             },
             initiateAnimationCustomer(){
                 this.customerSatisfaction = 100;
+            },
+            onIntersect(entries){
+                
+                console.log("intersect");
+                const animate = setTimeout(()=> {
+                    this.initiateAnimation()
+                    this.initiateAnimationCustomer()
+                }, 2000);
+                this.isIntersection = entries[0].isIntersecting;
+                console.log(this.isIntersection);
+                if(!this.isIntersection){
+                    this.completedSteps = 0;
+                    this.customerSatisfaction = 0;
+                    return
+                }   
+                
             }
         }
         }
@@ -40,9 +49,9 @@
             <div class="d-none d-sm-block">We deliver the</div>
             <div class="d-none d-sm-block">SOFTWARE you need,</div>
             <div class="d-none d-sm-block">no more, no less.</div>
-            <v-row class="text-subtitle-1">
+            <v-row class="text-subtitle-1" >
                 <v-col>
-                    <div @click="initiateAnimation()">
+                    <div @click="initiateAnimation()" >
                         <radial-progress-bar :diameter="150"
                         innerStrokeColor=""
                         startColor="white"
@@ -54,6 +63,7 @@
                     
                     </radial-progress-bar>
                     </div>
+                    <span v-intersect="onIntersect"></span>
                     Completed {{totalProject}} + projects
                 </v-col>
                 <v-col>

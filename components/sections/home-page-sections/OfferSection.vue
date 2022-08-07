@@ -40,29 +40,29 @@
         <v-row class="mt-16 text-subtitle-1 font-weight-bold text--disabled">
                 <v-col cols="12" md="4" lg="4" style="color:#6E6A6A;" class="mt-16">
                     <div class="d-flex flex-column align-center">
-                        <img src="../../../static/sections/Homepage/IT specialist 2.png" height="110px" width="120px" alt="">
+                        <img src="../../../static/sections/Homepage/IT specialist 2.png" height="100px" width="120px" alt="">
                         <div class="text--disabled">Skilled IT Specialists</div>
                     </div>
-                    <div class="d-flex flex-column align-center">
-                        <img src="../../../static/sections/Homepage/market analysis 2.png" height="110px" width="120px" alt="">
+                    <div class="d-flex flex-column align-center mt-4">
+                        <img src="../../../static/sections/Homepage/market analysis 2.png" height="100px" width="120px" alt="">
                         <div class="text--disabled">Market Analysis</div></div>
-                    <div class="d-flex flex-column align-center">
-                        <img src="../../../static/sections/Homepage/web solution 2.png" height="110px" width="120px" alt="">
+                    <div class="d-flex flex-column align-center mt-4">
+                        <img src="../../../static/sections/Homepage/web solution 2.png" height="100px" width="120px" alt="">
                         <div class="text--disabled">Web Solutions</div></div>
                 </v-col>
                 <v-col cols="12" sm="4" class="d-flex flex-column align-center">
                     <img src="../../../static/sections/Homepage/offering-app.png" height="550px" weight="250px" />
                 </v-col>
                 <v-col cols="12" sm="4" style="color:#6E6A6A;" class="mt-16">
-                    <div class="d-flex flex-column align-center">
-                        <img src="../../../static/sections/Homepage/planning 2.png" height="110px" width="120px" alt="">
+                    <div class="d-flex flex-column align-center ">
+                        <img src="../../../static/sections/Homepage/planning 2.png" height="100px" width="120px" alt="">
                         <div class="text--disabled">Planning Settings</div>
                     </div>
-                    <div class="d-flex flex-column align-center">
-                        <img src="../../../static/sections/Homepage/financial advice 2.png" height="110px" width="120px" alt="">
+                    <div class="d-flex flex-column align-center  mt-4">
+                        <img src="../../../static/sections/Homepage/financial advice 2.png" height="100px" width="120px" alt="">
                         <div class="text--disabled">Financial Advice</div></div>
-                    <div class="d-flex flex-column align-center">
-                        <img src="../../../static/sections/Homepage/ideas2.png" height="110px" width="120px" alt="">
+                    <div class="d-flex flex-column align-center mt-4">
+                        <img src="../../../static/sections/Homepage/ideas2.png" height="100px" width="120px" alt="">
                         <div class="text--disabled">Awesome Ideas</div></div>
                 </v-col>
             

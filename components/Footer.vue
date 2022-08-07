@@ -1,6 +1,6 @@
 <template>
 <div>
-        <div class="purple">
+        <div class="purple" id="footer">
             <div class="footer-main white--text">
                 <v-row class="d-none d-sm-flex">
                     
