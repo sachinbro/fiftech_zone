@@ -24,7 +24,7 @@
     background-position: center;
     background-origin: content-box; */
     height: 40vh;
-    background-image: url("../../../static/sections/servicespage/background.png");
+    background-image: url("../../../static/sections/Servicespage/background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     
