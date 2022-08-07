@@ -1,6 +1,25 @@
+<script>
+    export default{
+        data(){
+            return{
+                background: "curve",
+            }
+        },
+        watch:{
+            '$route'(to,from){
+                console.log(to.path)
+                if(to.path == "/"){
+                    this.background = "curve"
+                    return
+                }
+                this.background = "flat"
+            }
+        }
+    }
+</script>
 <template>
 <div>
-        <div class=" background d-flex align-end" id="footer">
+        <div class=" d-flex align-end" :class="background" id="footer">
             <div class="footer-main white--text">
                 <v-row class="d-none d-sm-flex align-end">
                     
@@ -8,7 +27,7 @@
                     <img src="../static/Footer/Group 318.png" alt="" height="170px" class="px-16">
                         <p class="mt-n10 pl-3">Digitalize your business with our product services. Let the world know where you stand in the market</p>
                     </v-col>
-                    <v-col>
+                    <v-col class="mb-6">
                         <p class="text-h5 font-weight-bold">Get In Touch</p>
                         <div class="mt-10">
                             <p><v-icon dark>mdi-map-marker</v-icon> Shantinagar, Kathmandu</p>
@@ -63,9 +82,17 @@
     .footer-main {
         /* background: transparent linear-gradient(11deg, #9B51E0 0%, #347FE2 76%, #0693E3 100%) 0% 0% no-repeat padding-box; */
     }
-    .background{
+    .curve{
         height: 55vh;
         background-image: url("../static/Footer/Footer.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top;
+        background-origin: content-box;
+    }
+    .flat{
+        height: 45vh;
+        background-image: url("../static/Footer/Footer1.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: top;

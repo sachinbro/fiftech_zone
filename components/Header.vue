@@ -90,8 +90,6 @@ export default{
     :app="makeSticky"
     elevation="0"
     height="70"
-    dark
-    
     >   <div class="pl-16">
         <nuxt-link to="/">
             <img class="" src="../static/icons/fiftechlogo.svg" height="70px">
