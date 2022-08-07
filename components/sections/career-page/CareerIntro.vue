@@ -1,13 +1,13 @@
 <template>
-    <div class="ma-8">
-        <v-row>
+    <v-container fluid class="">
+        <v-row class="background white--text">
             <v-col cols="1"></v-col>
-            <v-col>
+            <v-col class="mt-10">
                 <p class="text-h4">Perspective <br>CAREER Start!</p>
                 <p>We provide wide range of professsional service to meet your needs.</p>
             </v-col>
             <v-col></v-col>
-            <v-col><img src="../../../static/sections/Careerpage/Image 47.png" height="300px" alt=""></v-col>
+            <v-col class="mt-16"><img src="../../../static/sections/Careerpage/Image 47.png" height="300px" alt=""></v-col>
             <v-col cols="1"></v-col>
         </v-row>
         <p class="text-h5 text-center font-weight-bold">Why join us?</p>
@@ -45,5 +45,13 @@
             </v-col>
             <v-col cols="1"></v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
+<style scoped>
+.background{
+     height: 40vh;
+    background-image: url("../../../static/sections/Careerpage/masked.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+</style>

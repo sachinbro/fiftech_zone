@@ -1,11 +1,11 @@
 <template>
 <div>
-        <div class="purple" id="footer">
+        <div class=" background d-flex align-end" id="footer">
             <div class="footer-main white--text">
-                <v-row class="d-none d-sm-flex">
+                <v-row class="d-none d-sm-flex align-end">
                     
                     <v-col class="">
-                    <img src="../static/Footer/Group 318.png" alt="" class="px-16">
+                    <img src="../static/Footer/Group 318.png" alt="" height="170px" class="px-16">
                         <p class="mt-n10 pl-3">Digitalize your business with our product services. Let the world know where you stand in the market</p>
                     </v-col>
                     <v-col>
@@ -62,5 +62,13 @@
 <style scoped>
     .footer-main {
         /* background: transparent linear-gradient(11deg, #9B51E0 0%, #347FE2 76%, #0693E3 100%) 0% 0% no-repeat padding-box; */
+    }
+    .background{
+        height: 55vh;
+        background-image: url("../static/Footer/Footer.png");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: top;
+        background-origin: content-box;
     }
 </style>
