@@ -61,7 +61,7 @@ export default{
 </script>
 <template>
 <div >
-    <v-app-bar  elevation="0"  height="50"   class="navBackground" >
+    <v-app-bar flat elevation="0"  height="50"   class="navBackground" >
         <div class="d-flex align-start mb-3 ">
             <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
             
@@ -91,9 +91,9 @@ export default{
     elevation="0"
     height="70"
     >   <div class="pl-16">
-        <nuxt-link to="/">
+        <a href="/">
             <img class="" src="../static/icons/fiftechlogo.svg" height="70px">
-        </nuxt-link>
+        </a>
         </div>
             
         <v-spacer></v-spacer>
@@ -161,4 +161,9 @@ export default{
     .v-navigation-drawer, .v-overlay__scrim {
         z-index: 999999 !important;
         }
+    .nuxt-link-exact-active{
+
+        background-color: white;
+        color: #9B51E0 !important;
+    }
 </style>
