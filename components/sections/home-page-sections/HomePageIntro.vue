@@ -1,7 +1,22 @@
+<script>
+export default{
+    computed: {
+      screen () {
+        
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return 'small'
+          case 'sm': return 'small'
+          default : return 'large'
+        }
+      },
+    },
+
+}
+</script>
 <template>
 <div>
         <v-container  fluid class="mt-n1">
-            <v-row  class="background">
+            <v-row  :class="(screen === 'small') ?  'smallbackground' : 'background'">
                 <!-- <v-col cols="1" class="hidden-sm-and-down"></v-col> -->
                 <v-col cols="6" lg="6" md="6" align="center" class="white--text">
                     <div class="hidden-sm-and-down text-h2 font-weight-medium mt-16 ml-sm-5">
@@ -20,8 +35,8 @@
                 <v-col cols="6" class="hidden-sm-and-down">
                     <img class="hidden-sm-and-down" src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
                 </v-col>
-                <v-col class="hidden-md-and-up mr-n16" cols="4">
-                    <img  src="../../../static/landing area image.svg" width="400px" height="400px" alt="" >
+                <v-col class="hidden-md-and-up" cols="6">
+                    <v-img  :src="require('../../../static/landing area image.svg')" aspect-ratio="2" height="400" width="600" alt="" > </v-img>
                 </v-col>
             </v-row>
             <v-row class="d-none d-sm-flex  justify-center" >
@@ -37,7 +52,7 @@
                 <v-col cols="1"></v-col>
                 <v-col class="tasks mt-2" cols="1">
                    
-                        <div class="   hoverEffect text-center">
+                        <div class="hoverEffect text-center">
                             <div class="multilayer-circle font-weight-bold white--text"> 
                                 1
                             </div>
@@ -142,6 +157,15 @@
     
 </template>
 <style scoped>
+.smallbackground{
+    height: 100vh;
+    
+    background-image: url("../../../static/sections/mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-origin: content-box;
+}
 .background{
     height: 100vh;
     
