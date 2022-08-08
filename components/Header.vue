@@ -104,43 +104,39 @@ export default{
             
         </v-row>
         <v-spacer></v-spacer>
-        <v-row class="d-flex d-sm-none navigation-drawer justify-end align-middle">
-            <v-app-bar-nav-icon  @click.stop="drawer= !drawer" ></v-app-bar-nav-icon>
-            <v-navigation-drawer
-            v-model="drawer"
-            class=" black--text  navigation-drawer"
-           elevation="0"
-            height="400"
-            width="400"
-            app
-            right
-            temporary
-            >
-            <v-card dark>
-                <div class="navBackground white--text d-flex align-center text-h5"> <nuxt-link to="/"><img src="../static/icons/fiftechlogo.svg" alt=""></nuxt-link> <span class="ml-n4"> iftechZone</span> </div>
-            <v-list>
-                <v-list-item-group>
-                    <v-list-item v-for="link in links" :key="link.url" style="border: 1px #DCD4D4 solid;">
-                    <v-list-icon>
-                        <v-icon light>mdi-view-dashboard</v-icon>
-                    </v-list-icon>
-                    <v-list-item-content>
-                        <v-list-item-title >
-                           <nuxt-link :to="link.url" class="link black--text">
-                               {{link.name}}
-                           </nuxt-link> 
-                            </v-list-item-title>
-                    </v-list-item-content>
-                </v-list-item> 
-                </v-list-item-group>
-                
-            </v-list>
-            </v-card>
-            
-            </v-navigation-drawer>
+        <v-row class="d-flex d-sm-none justify-end ">
+            <v-app-bar-nav-icon  @click.stop="drawer= !drawer" dark ></v-app-bar-nav-icon>
+           
         </v-row>
         
     </v-app-bar>
+     <v-navigation-drawer class="mt-15"
+            v-model="drawer"
+            height="500"
+            width="250"
+            app
+            right
+            temporary
+            
+            >
+                    <div class="navBackground white--text d-flex align-center font-weight-bold">
+                        <a href="/"><img src="../static/icons/fiftechlogo.svg" height="50" class="ml-2"></a><span class="ml-n4">iftechzone</span> </div>
+                    <v-list
+                    nav
+                    dense
+                >
+                    <v-list-item-group
+                    v-model="group"
+                    active-class="deep-purple--text text--accent-4"
+                    >
+                    <v-list-item v-for="link in links" :key="link.title" style="border-bottom: 2px solid #DCD4D4; border-radius:0%;">
+                        <v-list-item-title><nuxt-link  :to="`${link.url}`" class="link">{{link.name}} <br> </nuxt-link> </v-list-item-title>
+                    </v-list-item>
+
+                    </v-list-item-group>
+                </v-list>
+            
+            </v-navigation-drawer>
 </div>
     
 </template>
@@ -158,9 +154,9 @@ export default{
         background-color: white;
         color: #9B51E0 !important;
     }
-    .v-navigation-drawer, .v-overlay__scrim {
+    /* .v-navigation-drawer, .v-overlay__scrim {
         z-index: 999999 !important;
-        }
+        } */
     .nuxt-link-exact-active{
 
         background-color: white;

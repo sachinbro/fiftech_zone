@@ -1,7 +1,22 @@
+<script>
+export default{
+    computed: {
+      screen () {
+        
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return 'small'
+          case 'sm': return 'small'
+          default : return 'large'
+        }
+      },
+    },
+
+}
+</script>
 <template>
 <div>
         <v-container  fluid class="mt-n1">
-            <v-row  class="background">
+            <v-row  :class="(screen === 'small') ?  'smallbackground' : 'background'">
                 <!-- <v-col cols="1" class="hidden-sm-and-down"></v-col> -->
                 <v-col cols="6" lg="6" md="6" align="center" class="white--text">
                     <div class="hidden-sm-and-down text-h2 font-weight-medium mt-16 ml-sm-5">
@@ -20,8 +35,8 @@
                 <v-col cols="6" class="hidden-sm-and-down">
                     <img class="hidden-sm-and-down" src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
                 </v-col>
-                <v-col class="hidden-md-and-up mr-n16" cols="4">
-                    <img  src="../../../static/landing area image.svg" width="400px" height="400px" alt="" >
+                <v-col class="hidden-md-and-up" cols="6">
+                    <v-img  :src="require('../../../static/landing area image.svg')" aspect-ratio="2" height="400" width="600" alt="" > </v-img>
                 </v-col>
             </v-row>
             <v-row class="d-none d-sm-flex  justify-center" >
@@ -35,34 +50,34 @@
             </v-row>
             <v-row class="white--text  d-none d-sm-flex" >
                 <v-col cols="1"></v-col>
-                <v-col class="tasks" cols="1">
-                    <v-card elevation="0" height="" >
-                        <v-card-text class=" rounded-circle  hoverEffect text-center">
+                <v-col class="tasks mt-2" cols="1">
+                   
+                        <div class="hoverEffect text-center">
                             <div class="multilayer-circle font-weight-bold white--text"> 
                                 1
                             </div>
-                        </v-card-text>
-                    </v-card> 
+                        </div>
+                
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1" >
-                    <v-card-text class=" rounded-circle text-center font-weight-bold hoverEffect">
+                    <div class=" text-center font-weight-bold hoverEffect">
                         <div class="multilayer-circle ">
                             2
                         </div>
-                    </v-card-text>
+                    </div>
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1">
-                    <v-card-text class=" rounded-circle  text-center font-weight-bold  hoverEffect">
+                    <div class="   text-center font-weight-bold  hoverEffect">
                         <div class="multilayer-circle ">
                             3
                         </div>
-                    </v-card-text>
+                    </div>
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
-            <v-row class="d-none d-sm-flex">
+            <v-row class="d-none d-sm-flex mt-n8">
                 <v-col class="d-flex flex-column align-center justify-center text-caption ml-n10">
                     <div class="text-subtitle-1">Developing an effective strategy</div>
                     <div>Five stages of progress: setting goals or objectives, analysis,</div>
@@ -77,7 +92,8 @@
                     <div class="text-subtitle-1">Automated testing and support</div>
                     <div>Automate some repetitive but necessary tasks in formalized</div>
                     <div>testing process already in place.  </div>
-                </v-col></v-row>
+                </v-col>
+            </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
@@ -141,6 +157,15 @@
     
 </template>
 <style scoped>
+.smallbackground{
+    height: 100vh;
+    
+    background-image: url("../../../static/sections/mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-origin: content-box;
+}
 .background{
     height: 100vh;
     
@@ -155,10 +180,10 @@
     width: 80%;
 }
 .multilayer-circle{
-    border-radius: 50%;
+  border-radius: 50%;
   box-shadow: 0px 0px 0px 10px rgba(155, 81, 224, 1), 0px 0px 0px 20px rgba(155, 81, 224, 0.69), 0px 0px 0px 30px rgba(155, 81, 224, 0.39);
-  width: 20px;
-  height:20px;
+  width: 30px;
+  height:30px;
   margin: 3em;
   background-color: rgba(155, 81, 224, 1);
 }
