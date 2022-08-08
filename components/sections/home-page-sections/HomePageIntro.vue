@@ -35,34 +35,34 @@
             </v-row>
             <v-row class="white--text  d-none d-sm-flex" >
                 <v-col cols="1"></v-col>
-                <v-col class="tasks" cols="1">
-                    <v-card elevation="0" height="" >
-                        <v-card-text class=" rounded-circle  hoverEffect text-center">
+                <v-col class="tasks mt-2" cols="1">
+                   
+                        <div class="   hoverEffect text-center">
                             <div class="multilayer-circle font-weight-bold white--text"> 
                                 1
                             </div>
-                        </v-card-text>
-                    </v-card> 
+                        </div>
+                
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1" >
-                    <v-card-text class=" rounded-circle text-center font-weight-bold hoverEffect">
+                    <div class=" text-center font-weight-bold hoverEffect">
                         <div class="multilayer-circle ">
                             2
                         </div>
-                    </v-card-text>
+                    </div>
                 </v-col>
                 <v-col cols="3" class="horizontal-line"></v-col>
                 <v-col cols="1">
-                    <v-card-text class=" rounded-circle  text-center font-weight-bold  hoverEffect">
+                    <div class="   text-center font-weight-bold  hoverEffect">
                         <div class="multilayer-circle ">
                             3
                         </div>
-                    </v-card-text>
+                    </div>
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
-            <v-row class="d-none d-sm-flex">
+            <v-row class="d-none d-sm-flex mt-n8">
                 <v-col class="d-flex flex-column align-center justify-center text-caption ml-n10">
                     <div class="text-subtitle-1">Developing an effective strategy</div>
                     <div>Five stages of progress: setting goals or objectives, analysis,</div>
@@ -77,7 +77,8 @@
                     <div class="text-subtitle-1">Automated testing and support</div>
                     <div>Automate some repetitive but necessary tasks in formalized</div>
                     <div>testing process already in place.  </div>
-                </v-col></v-row>
+                </v-col>
+            </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
@@ -155,10 +156,10 @@
     width: 80%;
 }
 .multilayer-circle{
-    border-radius: 50%;
+  border-radius: 50%;
   box-shadow: 0px 0px 0px 10px rgba(155, 81, 224, 1), 0px 0px 0px 20px rgba(155, 81, 224, 0.69), 0px 0px 0px 30px rgba(155, 81, 224, 0.39);
-  width: 20px;
-  height:20px;
+  width: 30px;
+  height:30px;
   margin: 3em;
   background-color: rgba(155, 81, 224, 1);
 }
