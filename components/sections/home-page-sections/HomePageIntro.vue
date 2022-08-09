@@ -158,7 +158,7 @@ export default{
 </template>
 <style scoped>
 .smallbackground{
-    height: 100vh;
+    height: 50vh;
     
     background-image: url("../../../static/sections/mobile.png");
     background-repeat: no-repeat;

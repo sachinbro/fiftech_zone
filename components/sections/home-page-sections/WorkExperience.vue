@@ -1,5 +1,5 @@
 <template>
-    <v-row class="mt-5 mt-sm-16">
+    <v-row class="mt-5 mt-sm-16 background">
         <v-col cols="12" sm="6">
             <v-row class="text-h6 text-sm-h4  font-weight-bold ma-1 ma-sm-10">
                 <v-container>
@@ -28,9 +28,19 @@
                 </v-container>
             </v-row>
         </v-col>
-        <v-col class="d-flex align-center" cols="12" sm="6" >
+        <v-col class="d-flex align-center justify-center" cols="12" md="6" >
             <img src="../../../static/sections/Homepage/Group 319.png" class="hidden-sm-and-down" width="500px" height="350px" alt="">
             <img src="../../../static/sections/Homepage/Group 319.png" class="hidden-md-and-up" width="300px" height="200px" alt="">
         </v-col>
     </v-row>
 </template>
+<style scoped>
+.background{
+    background-image: url("../../../static/sections/Homepage/image11.png");
+    background-repeat: no-repeat;
+    height: 80vh;
+
+    background-size: 100% 30%;
+    background-position: left;
+}
+</style>
