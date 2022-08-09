@@ -69,7 +69,7 @@ export default{
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
-        <v-row class="d-flex justify-space-around mb-4 mt-2 ">
+        <v-row class="d-flex justify-space-around mb-4 mt-0 mt-sm-2 ">
             <div>
                 <v-icon color="white">mdi-phone</v-icon>
                 <span class="white--text text-caption hidden-sm-and-down">9846907090</span>
@@ -83,7 +83,7 @@ export default{
                 <span class="white--text text-caption hidden-sm-and-down">10 A.M to 5 P.M</span>
             </div>
         </v-row>
-        <v-spacer></v-spacer>
+        <v-spacer class="d-none d-sm-flex"></v-spacer>
     </v-app-bar>
     <v-app-bar 
     class="sticky navBackground "
@@ -103,7 +103,7 @@ export default{
             <nuxt-link v-for="link in links" :key="link.title" :to="`${link.url}`" class="white--text link">{{link.name}}</nuxt-link>
             
         </v-row>
-        <v-spacer></v-spacer>
+        <v-spacer class="d-none d-sm-flex"></v-spacer>
         <v-row class="d-flex d-sm-none justify-end ">
             <v-app-bar-nav-icon  @click.stop="drawer= !drawer" dark ></v-app-bar-nav-icon>
            
@@ -126,7 +126,7 @@ export default{
                     dense
                 >
                     <v-list-item-group
-                    v-model="group"
+                    
                     active-class="deep-purple--text text--accent-4"
                     >
                     <v-list-item v-for="link in links" :key="link.title" style="border-bottom: 2px solid #DCD4D4; border-radius:0%;">

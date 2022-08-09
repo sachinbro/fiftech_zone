@@ -24,14 +24,11 @@
                 this.customerSatisfaction = 100;
             },
             onIntersect(entries){
-                
-                console.log("intersect");
                 const animate = setTimeout(()=> {
                     this.initiateAnimation()
                     this.initiateAnimationCustomer()
                 }, 2000);
                 this.isIntersection = entries[0].isIntersecting;
-                console.log(this.isIntersection);
                 if(!this.isIntersection){
                     this.completedSteps = 0;
                     this.customerSatisfaction = 0;

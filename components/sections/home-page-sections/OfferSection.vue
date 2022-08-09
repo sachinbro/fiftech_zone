@@ -1,3 +1,8 @@
+<script>
+export default {
+   
+    }
+</script>
 <template>
     <v-container class="mt-0 mt-md-16">
         <v-row class="d-flex justify-center text-h6 text-md-h4  font-weight-bold ml-md-n16">
