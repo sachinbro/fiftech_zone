@@ -56,7 +56,7 @@
 .background{
        height: 90vh;
     
-    background-image: url("../../../static/sections/AboutPage/teammember.png");
+    background-image: url("../../../static/sections/Aboutpage/teammember.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
