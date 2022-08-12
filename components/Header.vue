@@ -100,7 +100,7 @@ export default{
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-row class="d-none d-sm-flex justify-space-around white--text" no-gutters>
-            <nuxt-link v-for="link in links" :key="link.title" :to="`${link.url}`" class="white--text link">{{link.name}}</nuxt-link>
+            <nuxt-link v-for="link in links" :key="link.title" :to="`${link.url}`" class="white--text link px-3 py-1">{{link.name}}</nuxt-link>
             
         </v-row>
         <v-spacer class="d-none d-sm-flex"></v-spacer>
