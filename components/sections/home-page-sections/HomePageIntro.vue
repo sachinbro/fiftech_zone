@@ -2,7 +2,7 @@
 export default{
     computed: {
       screen () {
-        
+
         switch (this.$vuetify.breakpoint.name) {
           case 'xs': return 'small'
           case 'sm': return 'small'
