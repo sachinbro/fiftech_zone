@@ -1,20 +1,43 @@
 <script>
+import VueSlickCarousel from "vue-slick-carousel";
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css';
+import 'vue-slick-carousel/dist/vue-slick-carousel.css';
 export default{
-    data(){
+    data() {
         return {
             testimonials: [
                 {
-                    img: '',
-                    post: 'Marketing Manager',
-                    name: 'Luca Jacobs'
+                    img: "",
+                    post: "Marketing Manager",
+                    name: "Luca Jacobs"
                 },
                 {
-                     img: '',
-                    post: 'CEO',
-                    name: 'Ram Sigdel'
+                    img: "",
+                    post: "CEO",
+                    name: "Ram Sigdel"
                 }
-            ]
-        }
+            ],
+          settings: {
+            "autoplay": true,
+            "edgeFriction": 0.35,
+            "infinite": true,
+            "speed": 500,
+            "slidesToShow": 1,
+            "rows": 1,
+            "slidesToScroll": 1,
+            "autoplaySpeed": 3000,
+          },
+
+        };
+    },
+    components: { VueSlickCarousel },
+    methods: {
+        nextSlide(){
+          this.$refs.slick.next();
+        },
+        prevSlide(){
+          this.$refs.slick.prev();
+        },
     }
 }
 
@@ -30,35 +53,33 @@ export default{
             </v-row>
             <v-row>
                 <v-col cols="1"></v-col>
-                <v-col>
-                    <v-carousel cycle
-                        :show-arrows="false"
-                        interval="6000"
-                        
-                        hide-delimiters>
-                        <v-carousel-item 
-                            v-for="(testimonial, index) in testimonials"
-                            :key="index"
-                        >
-                            <v-card elevation="0">
-                                <v-card-text class="ma-sm-4">
-                                    <div class=" rounded-lg pa-sm-12 pa-4 text-subtitle-1 testimonial">
-                                        <p>
-                                            The best generator I could find because it optionally includes lists, formatting, blockquotes and a bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists Bacon Ipsum - If you want to make your client hungry
-                                        </p>
-                                    </div>
-                                    <div class="testimonial d-flex flex-column"></div>
-                                    <div class="d-flex text-subtitle-1">
-                                        <v-avatar size="70" class="mt-2">
-                                            <img src="../../../static/biralo.png" alt="">
-                                        </v-avatar>
-                                    
-                                            <p class="mt-4 ml-4">{{testimonial.name}} <br>{{testimonial.post}}</p>
-                                   </div>
-                                </v-card-text>
-                            </v-card>
-                        </v-carousel-item>
-                    </v-carousel>
+                <v-col cols="3">
+                  <div class="text-h5 text-center">
+                    <VueSlickCarousel v-bind="settings" ref="slick">
+                      <div v-for="testimonial in testimonials" :key="testimonial.name">
+                        <v-card elevation="0">
+                          <v-card-text class="ma-sm-4">
+                            <div class=" rounded-lg pa-sm-10 pa-4 text-subtitle-1 testimonial">
+                              <p>
+                                The best generator I could find because it optionally includes lists, formatting, blockquotes and a
+                                bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists
+                                Bacon Ipsum - If you want to make your client hungry
+                              </p>
+                            </div>
+                            <div class="testimonial d-flex flex-column"></div>
+                            <div class="d-flex text-subtitle-1">
+                              <v-avatar size="70" class="mt-2">
+                                <img src="../../../static/biralo.png" alt="">
+                              </v-avatar>
+
+                              <p class="mt-4 ml-4">{{testimonial.name}}<br>{{testimonial.post}}</p>
+                            </div>
+                          </v-card-text>
+                        </v-card>
+                      </div>
+                    </VueSlickCarousel>
+
+                  </div>
                 </v-col>
                 <v-col cols="2"></v-col>
                 <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold mt-16">
@@ -67,8 +88,8 @@ export default{
                     <div >great experiences.</div>
                     <div class="mt-2 text-h6 font-weight-light text--secondary">We are as good as they say we are.</div>
                     <div class="pa-4">
-                            <v-icon x-large style="border: 1px solid black;"  class="rounded-lg pa-1 mx-3">mdi-chevron-left</v-icon>                     
-                            <v-icon x-large style="border: 1px solid black;"  class="rounded-lg pa-1">mdi-chevron-right</v-icon>                     
+                            <v-icon x-large style="border: 1px solid black;"  @click="prevSlide()" class="rounded-lg pa-1 mx-3">mdi-chevron-left</v-icon>
+                            <v-icon x-large style="border: 1px solid black;" @click="nextSlide()" class="rounded-lg pa-1">mdi-chevron-right</v-icon>
                    </div>
                 </v-col>
             </v-row>

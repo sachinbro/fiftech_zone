@@ -48,10 +48,9 @@ export default{
                 <div style="color:#3D2F2F; ">Discover how we work</div>
                 <div style="color:#3D2F2F; "> to deliver outstanding results.</div>
             </v-row>
-            <v-row class="white--text  d-none d-sm-flex" >
+            <v-row class="white--text  d-none d-sm-flex justify-space-around" >
                 <v-col cols="1"></v-col>
                 <v-col class="tasks mt-2" cols="1">
-                   
                         <div class="hoverEffect text-center">
                             <div class="multilayer-circle font-weight-bold white--text"> 
                                 1
@@ -75,24 +74,25 @@ export default{
                         </div>
                     </div>
                 </v-col>
-                <v-col cols="1"></v-col>
+                <v-col cols="2"></v-col>
             </v-row>
-            <v-row class="d-none d-sm-flex mt-n8">
-                <v-col class="d-flex flex-column align-center justify-center text-caption ml-n10">
+            <v-row class="d-none d-sm-flex  mt-n8">
+                <v-col class="d-flex flex-column align-center  text-caption ">
                     <div class="text-subtitle-1">Developing an effective strategy</div>
                     <div>Five stages of progress: setting goals or objectives, analysis,</div>
                     <div>strategy formation, strategy implementation, and strategy monitoring.</div>
                 </v-col>
-                <v-col class="d-flex flex-column align-center justify-center text-caption">
+                <v-col class="d-flex flex-column align-center  text-caption">
                     <div class="text-subtitle-1">Software development process</div>
                     <div>We employ 5 phases of software development process:</div>
                     <div>research, ideation, design, development and iteration.</div>
                 </v-col>
-                <v-col class="d-flex flex-column align-center justify-center text-caption">
+                <v-col class="d-flex flex-column align-center  text-caption mr-n12">
                     <div class="text-subtitle-1">Automated testing and support</div>
                     <div>Automate some repetitive but necessary tasks in formalized</div>
                     <div>testing process already in place.  </div>
                 </v-col>
+                <v-col cols="1"></v-col>
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >

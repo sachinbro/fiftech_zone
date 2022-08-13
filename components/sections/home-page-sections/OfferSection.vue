@@ -24,11 +24,11 @@ export default {
                     <v-col cols="12" align="center" lg="6" md="6">
                         
                         <v-row no-gutters >
-                            <v-col cols="4" >
-                            <img src="../../../static/sections/Homepage/offering2.svg" height="150px" width="130px" alt="">
-                        </v-col>
-                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-n10">
-                            <div class="text-subtitle-1 text-md-h6">Guarantee of Quality</div> 
+                            <v-col cols="4" class="ml-n4 ml-md-0">
+                                <img src="../../../static/sections/Homepage/offering2.svg" height="150px" width="130px" alt="">
+                            </v-col>
+                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-md-n10">
+                            <div class="text-subtitle-1 text-md-h6 font-weight-bold">Guarantee of Quality</div> 
                             <div>We assure quality and client satisfaction</div>                          
                             <div>and offer primarily to the paying clients who have purchased</div>                          
                             <div>our services</div>                          
@@ -38,15 +38,13 @@ export default {
                     </v-col>
                     <v-divider vertical></v-divider>
                     <v-col cols="12" lg="6" md="6" >
-                        <v-row no-gutters class="ml-8">
+                        <v-row no-gutters class="ml-md-8">
                             <v-col cols="4">
                             <img src="../../../static/sections/Homepage/offering1.svg" height="150px" width="130px" alt="">
                         </v-col>
-                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-n10">
-                            <div class="text-subtitle-1 text-md-h6">Planning Information</div> 
-                            <div>We think regarding the activities required to achieve a</div>                          
-                            <div>desired goal based on foresight, the fundamental capacity for</div>                          
-                            <div>mental time travel.</div>                          
+                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-md-n10">
+                            <div class="text-subtitle-1 text-md-h6 font-weight-bold">Planning Information</div> 
+                            <p>We think regarding the activities required to achieve a <br> desired goal based on foresight, the fundamental capacity for mental time travel.</p>                          
                         </v-col>
                         </v-row>
                     </v-col>
