@@ -70,7 +70,7 @@
                         startColor="white"
                         stopColor="white"
                        :completed-steps="customerSatisfaction"
-                       total-steps="100"
+                       :total-steps="100"
                        class="progress-bar"
                        >
                     
