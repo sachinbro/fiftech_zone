@@ -12,6 +12,7 @@ export default{
         return {
             scroll: 0,
             target: "#testimonials",
+            background: "navBackground",
             drawer: false,
             socialIcons: [
                 "facebook", "twitter", "instagram",
@@ -42,6 +43,7 @@ export default{
         }
 
     },
+
     methods: {
         onScroll(e){
             this.scroll = e.target.documentElement.scrollTop
@@ -55,13 +57,23 @@ export default{
         },
         
     },
+        watch:{
+            '$route'(to,from){
+                console.log(to.path)
+                if(to.path == "/"){
+                    this.background = "navBackground"
+                    return
+                }
+                this.background = "otherNvaBackground"
+            }
+        }
     
 
 }
 </script>
 <template>
 <div >
-    <v-app-bar flat elevation="0"  height="50"   class="navBackground" >
+    <v-app-bar flat elevation="0"  height="50"   :class="background" >
         <div class="d-flex align-start mb-3 ">
             <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
             
@@ -86,7 +98,8 @@ export default{
         <v-spacer class="d-none d-sm-flex"></v-spacer>
     </v-app-bar>
     <v-app-bar 
-    class="sticky navBackground "
+    class="stick "
+    :class="background"
     :app="makeSticky"
     elevation="0"
     height="70"
@@ -142,8 +155,10 @@ export default{
 </template>
 <style scoped>
     .navBackground {
-       background: transparent linear-gradient(10deg,  #0693E3 0%, #347FE2 36%, #9B51E0 100%) 0% 0% no-repeat padding-box;
+       background: transparent linear-gradient(100deg,  #0693E3 0%, #347FE2 36%, #9B51E0 100%) 0% 0% no-repeat padding-box;
     }
+    .otherNvaBackground{
+        background: transparent linear-gradient(100deg, #9B51E0 100%, #347FE2 76%, #0693E3 30%) 0% 0% no-repeat padding-box;    }
     .link{
        font: normal normal bold 15px Segoe UI;
         text-decoration: none;
