@@ -40,7 +40,7 @@
     background-repeat: no-repeat;
     height: 80vh;
 
-    background-size: 100% 30%;
+    background-size: 30% 100%;
     background-position: left;
 }
 </style>

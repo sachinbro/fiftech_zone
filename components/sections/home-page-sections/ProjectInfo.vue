@@ -55,7 +55,7 @@ export default {
                                  stopColor="white"
                                  :completed-steps="completedSteps"
                                  :total-steps="totalSteps"
-                                 animateSpeed="2000"
+                                 animateSpeed="3000"
                                  class="progress-bar"
             >
 
@@ -72,7 +72,7 @@ export default {
                                  stopColor="white"
                                  :completed-steps="customerSatisfaction"
                                  :total-steps="100"
-                                 animateSpeed="2000"
+                                 animateSpeed="3000"
                                  class="progress-bar"
             >
 
