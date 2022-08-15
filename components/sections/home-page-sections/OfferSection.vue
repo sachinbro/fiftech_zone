@@ -24,10 +24,10 @@ export default {
                     <v-col cols="12" align="center" lg="6" md="6">
                         
                         <v-row no-gutters >
-                            <v-col cols="4" class="ml-n4 ml-md-0">
+                            <v-col cols="4" class="ml-n4 ml-md-0 ml-sm-n16">
                                 <img src="../../../static/sections/Homepage/offering2.svg" height="150px" width="130px" alt="">
                             </v-col>
-                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-md-n10">
+                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
                             <div class="text-subtitle-1 text-md-h6 font-weight-bold">Guarantee of Quality</div> 
                             <div>We assure quality and client satisfaction</div>                          
                             <div>and offer primarily to the paying clients who have purchased</div>                          
@@ -42,7 +42,7 @@ export default {
                             <v-col cols="4">
                             <img src="../../../static/sections/Homepage/offering1.svg" height="150px" width="130px" alt="">
                         </v-col>
-                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-md-n10">
+                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
                             <div class="text-subtitle-1 text-md-h6 font-weight-bold">Planning Information</div> 
                             <p>We think regarding the activities required to achieve a <br> desired goal based on foresight, the fundamental capacity for mental time travel.</p>                          
                         </v-col>
@@ -64,10 +64,10 @@ export default {
                         <img src="../../../static/sections/Homepage/web solution 2.png" :height="height"  alt="">
                         <div class="text--disabled">Web Solutions</div></div>
                 </v-col>
-                <v-col cols="12" sm="4" class="d-flex flex-column align-center">
+                <v-col cols="12" md="4" class="d-flex flex-column align-center">
                     <img src="../../../static/sections/Homepage/offering-app.png" height="550px" weight="250px" />
                 </v-col>
-                <v-col cols="12" sm="4" style="color:#6E6A6A;" class="mt-14">
+                <v-col cols="12" md="4" style="color:#6E6A6A;" class="mt-14">
                     <div class="d-flex flex-column align-center ">
                         <img src="../../../static/sections/Homepage/planning 2.png" :height="height"  alt="">
                         <div class="text--disabled">Planning Settings</div>

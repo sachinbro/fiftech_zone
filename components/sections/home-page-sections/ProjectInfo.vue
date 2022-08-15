@@ -82,7 +82,7 @@ export default {
         </v-col>
       </v-row>
     </v-col>
-    <v-col class="d-sm-flex d-none  justify-end">
+    <v-col class="d-none d-md-flex  justify-end">
       <img src="../../../static/sections/Homepage/banner_img.png" height="500px" width="500px" alt="">
     </v-col>
     <v-col cols="1"></v-col>
