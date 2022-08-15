@@ -58,7 +58,7 @@ export default{
                         </div>
                 
                 </v-col>
-                <v-col cols="3" class="horizontal-line"></v-col>
+                <v-col lg="3" md="2" class="horizontal-line"></v-col>
                 <v-col cols="1" >
                     <div class=" text-center font-weight-bold hoverEffect">
                         <div class="multilayer-circle ">
@@ -66,7 +66,7 @@ export default{
                         </div>
                     </div>
                 </v-col>
-                <v-col cols="3" class="horizontal-line"></v-col>
+                <v-col lg="3" md="2" class="horizontal-line"></v-col>
                 <v-col cols="1">
                     <div class="   text-center font-weight-bold  hoverEffect">
                         <div class="multilayer-circle ">

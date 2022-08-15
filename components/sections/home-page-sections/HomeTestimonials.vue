@@ -53,13 +53,13 @@ export default{
             </v-row>
             <v-row>
                 <v-col cols="1"></v-col>
-                <v-col cols="3">
+                <v-col cols="12" sm="6" md="4" lg="3">
                   <div class="text-h5 text-center">
                     <VueSlickCarousel v-bind="settings" ref="slick">
                       <div v-for="testimonial in testimonials" :key="testimonial.name">
                         <v-card elevation="0">
-                          <v-card-text class="ma-sm-4">
-                            <div class=" rounded-lg pa-sm-10 pa-4 text-subtitle-1 testimonial">
+                          <v-card-text class="ma-md-4">
+                            <div class=" rounded-lg pa-md-10 pa-4 text-subtitle-1 testimonial">
                               <p>
                                 The best generator I could find because it optionally includes lists, formatting, blockquotes and a
                                 bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists
@@ -81,15 +81,19 @@ export default{
 
                   </div>
                 </v-col>
-                <v-col cols="2"></v-col>
+                <v-col cols="0" md="2"></v-col>
                 <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold mt-16">
                     <div >We use our focused set of</div>
                     <div >capabilities to build </div>
                     <div >great experiences.</div>
                     <div class="mt-2 text-h6 font-weight-light text--secondary">We are as good as they say we are.</div>
                     <div class="pa-4">
-                            <v-icon x-large style="border: 1px solid black;"  @click="prevSlide()" class="rounded-lg pa-1 mx-3">mdi-chevron-left</v-icon>
-                            <v-icon x-large style="border: 1px solid black;" @click="nextSlide()" class="rounded-lg pa-1">mdi-chevron-right</v-icon>
+                      <v-btn elevation="0" style="border: 1px solid black;" @click="prevSlide()" class="rounded-lg mx-4" icon tile>
+                        <v-icon x-large   >mdi-chevron-left</v-icon>
+                      </v-btn>
+                      <v-btn elevation="0" style="border: 1px solid black;" @click="nextSlide()" class="rounded-lg" icon tile>
+                        <v-icon x-large  >mdi-chevron-right</v-icon>
+                      </v-btn>
                    </div>
                 </v-col>
             </v-row>
