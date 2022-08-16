@@ -54,7 +54,7 @@ export default {
           warning: colors.amber.base,
           error: colors.deepOrange.accent4,
           success: colors.green.accent3,
-          navBackground: '#9B51E0',
+          // navBackground: '#9B51E0',
           purpleish: '#B051E0',
           gray: 'rgba(0,0,0,0.8)',
         },

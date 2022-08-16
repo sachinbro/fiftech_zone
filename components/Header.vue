@@ -73,7 +73,7 @@ export default{
 </script>
 <template>
 <div >
-    <v-app-bar flat elevation="0"  height="50"   :class="background" >
+    <v-app-bar flat elevation="0"  height="50"   :class="makeSticky ? background : ''" color="transparent">
         <div class="d-flex align-start mb-3 ">
             <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
             
@@ -98,8 +98,9 @@ export default{
         <v-spacer class="d-none d-sm-flex"></v-spacer>
     </v-app-bar>
     <v-app-bar 
+    color="transparent"
     class="stick "
-    :class="background"
+    :class="makeSticky ? background : ''"
     :app="makeSticky"
     elevation="0"
     height="70"
