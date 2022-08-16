@@ -116,3 +116,8 @@ export default{
 </div>
  
 </template>
+<style scoped>
+.carousel-3d-container{
+    height: 440px !important;
+}
+</style>

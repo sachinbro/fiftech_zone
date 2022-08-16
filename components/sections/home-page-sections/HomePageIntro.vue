@@ -167,13 +167,13 @@ export default{
     background-origin: content-box;
 }
 .background{
-    height: 100vh;
     
+    /* height: 100vh;
     background-image: url("../../../static/sections/masked1.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center;
-    background-origin: content-box;
+    background-origin: content-box; */
 }
 .moto{
     font: normal normal bold 50px Segoe UI;
