@@ -22,10 +22,11 @@
 </template>
 <style scoped>
 .background{
-    background-image: url("../../../static/maskedother.png");
+    height: 55vh;
+    /* background-image: url("../../../static/maskedother.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: top;
-    background-origin: content-box;
+    background-origin: content-box; */
 }
 </style>

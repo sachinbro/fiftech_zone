@@ -59,7 +59,6 @@ export default{
     },
         watch:{
             '$route'(to,from){
-                console.log(to.path)
                 if(to.path == "/"){
                     this.background = "navBackground"
                     return

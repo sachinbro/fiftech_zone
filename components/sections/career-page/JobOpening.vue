@@ -94,7 +94,7 @@ export default{
 <template>
 <div v-if="jobs" class="ma-10">
     <div class="text-center mt-16">
-        <p class="text-h6 font-weight-semibold">Job Openings</p>
+        <p class="text-h4 font-weight-medium">Job Openings</p>
         <p class="text--secondary text-subtitle-1">Sample text. Click to select the text box. Click again or double click to start editing the text.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </div>
     <div v-for="job in jobs"

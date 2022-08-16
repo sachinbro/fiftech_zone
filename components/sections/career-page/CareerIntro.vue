@@ -19,7 +19,7 @@
             <v-col>
                 <div class="pa-2 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color:#E9D1FF;">
                     <div class="pa-10 rounded-circle" style="border: 1px solid #070707; background-color: white;">
-                    <p class="text-center">Faster growing company</p>
+                    <p class="text-center font-weight-medium">Faster growing company</p>
                     <v-avatar size="150" left><img src="../../../static/sections/Careerpage/Image 46.png" alt=""/></v-avatar>
                 </div>
                 </div>
@@ -29,7 +29,7 @@
             <v-col>
                 <div class="pa-2 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color:#E9D1FF;">
                     <div class="pa-12 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color: white;">
-                    <p class="text-center">Great Collegues</p>
+                    <p class="text-center font-weight-medium">Great Collegues</p>
                     <v-avatar size="150"><img src="../../../static/sections/Careerpage/Image 49.png" alt=""/></v-avatar>
                 </div>
                 </div>
@@ -38,7 +38,7 @@
             <v-col>
                 <div class="pa-2 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color:#E9D1FF;">
                     <div class="pa-10 rounded-circle" style="border: 1px solid rgba(112, 112, 112, 1); background-color: white;">
-                    <p class="text-center">Take Charge</p>
+                    <p class="text-center font-weight-medium">Take Charge</p>
                     <v-avatar size="150" left><img src="../../../static/sections/Careerpage/Image 46.png" alt=""/></v-avatar>
                 </div>
                 </div>
@@ -49,9 +49,9 @@
 </template>
 <style scoped>
 .background{
-     height: 40vh;
-    background-image: url("../../../static/sections/Careerpage/masked.png");
+     height: 55vh;
+    /* background-image: url("../../../static/sections/Careerpage/masked.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
 }
 </style>

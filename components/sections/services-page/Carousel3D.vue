@@ -76,7 +76,7 @@ export default{
 </script>
 <template>
 <div>
-        <p class="text-h4 text-center"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
+        <p class="text-h4 text-center font-weight-medium"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
        <v-row class="mt-10">
         <v-col cols="1"></v-col>
         <v-col>
