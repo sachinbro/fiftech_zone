@@ -9,7 +9,7 @@
                     We promise to provide every service with a smile, and to your highest level of satisfaction.</p>
                 </v-col>
                 <v-col></v-col>
-                <v-col class="mt-10" cols="2"><img src="../../../static/sections/Servicespage/Image 400.png" height="200px" alt=""></v-col>
+                <v-col class="mt-10" cols="2"><img src="../../../static/sections/Servicespage/Image 400.png" height="240px" alt=""></v-col>
                 <v-col cols="2"></v-col>
             </v-row>
         </v-container>
@@ -17,16 +17,11 @@
 </template>
 <style scoped>
     .background{
-        /* height: 50vh;
-    background-image: url("../../../static/sections/servicespage/background.png");
+     
+    height: 45vh;
+    /* background-image: url("../../../static/sections/Servicespage/background.png");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
-    background-position: center;
-    background-origin: content-box; */
-    height: 40vh;
-    background-image: url("../../../static/sections/Servicespage/background.png");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 100%; */
     
 }
 </style>
