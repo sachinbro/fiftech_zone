@@ -157,7 +157,7 @@ export default{
     
 </template>
 <style scoped>
-.smallbackground{
+/* .smallbackground{
     height: 50vh;
     
     background-image: url("../../../static/sections/mobile.png");
@@ -165,7 +165,7 @@ export default{
     background-size: 100% 100%;
     background-position: center;
     background-origin: content-box;
-}
+} */
 .background{
     
     /* height: 100vh;

@@ -30,6 +30,7 @@ export default {
           easing: "easeInOutCubic",
         }
       },
+      
     },
     watch:{
         '$route'(to, from){
@@ -44,3 +45,4 @@ export default {
     }
 }
 </script>
+
