@@ -1,5 +1,5 @@
 <template>
- <v-app :class="background">
+ <v-app  :class="(screen === 'small') ?  'smallbackground' : 'background'">
   <Header />
   <v-main>
       <Nuxt />
@@ -28,6 +28,15 @@ export default {
                 }
                 this.background = "otherNavBackground"
             }
+        }, 
+        computed: {
+            screen () {
+         switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return 'small'
+          case 'sm': return 'small'
+          default : return 'large'
+        }
+      },
         }
 }
 </script>
@@ -36,6 +45,14 @@ export default {
    font-family: Segoe UI , sans-serif !important; height: 100vh;
     
  }
+ .smallbackground{
+    height: 110vh;
+    background-image: url("../static/sections/mobile.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    background-origin: content-box;
+}
  .homebackground{
     background-image: url("../static/sections/masked.png");
     background-repeat: no-repeat;
