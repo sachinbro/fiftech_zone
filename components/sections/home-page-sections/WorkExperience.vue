@@ -37,9 +37,9 @@
 .background{
     background-image: url("../../../static/sections/Homepage/image11.png");
     background-repeat: no-repeat;
-    height: 80vh;
-
-    background-size: 30% 100%;
+    background-size: 40% 100%;
     background-position: left;
+    /* background-color: aliceblue; */
+    background-origin: content-box;
 }
 </style>
