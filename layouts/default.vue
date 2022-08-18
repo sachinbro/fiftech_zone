@@ -1,5 +1,5 @@
 <template>
- <v-app  :class="(screen === 'small') ?  'smallbackground' : 'homebackground'">
+ <v-app  :class="(screen === 'small') ?  'smallbackground' : background">
   <Header />
   <v-main>
       <Nuxt />
@@ -13,6 +13,13 @@ import Header from '../components/Header.vue'
 import Footer from '../components/Footer.vue';
 export default {
     name: "DefaultLayout",
+    mounted(){
+        if(this.$route.path == "/"){
+            this.background = "homebackground"
+        }
+        else
+        {this.background = "otherNavBackground"}
+    },
     data() {
         return {
             background: "homebackground"

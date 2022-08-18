@@ -27,7 +27,7 @@ export default{
                         <div>GO DIGITAL,</div>
                         <div>LIVE SMART.</div>
                     </div>
-                    <div class="mt-0 mt-sm-6 text-caption text--bold">
+                    <div class="mt-0 mt-sm-6 text-caption text-md-h6 text--bold">
                         <div>Digitalize your business with our product services.</div>
                         <div> Let the world know where you stand in the market.</div>
                     </div>
