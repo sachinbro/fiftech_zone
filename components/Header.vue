@@ -55,6 +55,13 @@ export default{
         makeSticky(){
             return this.scroll > 50;
         },
+        screen () {
+        switch (this.$vuetify.breakpoint.name) {
+          case 'xs': return '40px'
+          case 'sm': return '50px'
+          default : return '70px'
+        }
+      },
         
     },
         watch:{
@@ -103,9 +110,9 @@ export default{
     :app="makeSticky"
     elevation="0"
     height="70"
-    >   <div class="pl-16">
+    >   <div class="pl-4 pl-md-16">
         <a href="/">
-            <img class="" src="../static/icons/fiftechlogo.svg" height="70px">
+            <img class="" src="../static/icons/fiftechlogo.svg" :height="screen">
         </a>
         </div>
             

@@ -2,7 +2,6 @@
 export default {
     computed: {
       height () {
-        
         switch (this.$vuetify.breakpoint.name) {
           case 'xs': return 200
           case 'sm': return 200
@@ -19,32 +18,31 @@ export default {
         <v-row class="d-flex justify-center text-h6 text-md-h4  font-weight-bold ml-md-n16">
             What We Offer
         </v-row>
-        <v-card class="mt-2 mt-sm-10  rounded-xl" elevation="1">
+        <v-card class="mt-2 mt-sm-10  rounded-xl" elevation="3">
             <v-row> 
                     <v-col cols="12" align="center" lg="6" md="6">
                         
-                        <v-row no-gutters >
-                            <v-col cols="4" class="ml-n4 ml-md-0 ml-sm-n16">
-                                <img src="../../../static/sections/Homepage/offering2.svg" height="150px" width="130px" alt="">
+                        <v-row no-gutters align="center">
+                            <v-col cols="2" md="4" class="pa-1 pa-md-0 ml-md-n4 ml-md-0 ml-sm-n16 ">
+                                <img src="../../../static/sections/Homepage/offering2.svg" :height="$vuetify.breakpoint.name === 'xs' ? '60px' : '150px'"  alt="">
                             </v-col>
-                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
-                            <div class="text-subtitle-1 text-md-h6 font-weight-bold">Guarantee of Quality</div> 
+                        <v-col cols="10" md="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
+                            <div class="text-subtitle-1 text-md-h6 font-weight-medium font-weight-md-bold">Guarantee of Quality</div> 
                             <div>We assure quality and client satisfaction</div>                          
-                            <div>and offer primarily to the paying clients who have purchased</div>                          
-                            <div>our services</div>                          
+                            <div class="ml-md-2">and offer primarily to the paying clients who have purchased our services</div>                          
                         </v-col>
                         </v-row>
                         
                     </v-col>
                     <v-divider vertical></v-divider>
                     <v-col cols="12" lg="6" md="6" >
-                        <v-row no-gutters class="ml-md-8">
-                            <v-col cols="4">
-                            <img src="../../../static/sections/Homepage/offering1.svg" height="150px" width="130px" alt="">
+                        <v-row no-gutters class=" ml-md-8" align="center">
+                            <v-col cols="2" md="4" class="mt-4 mt-md-0">
+                            <img src="../../../static/sections/Homepage/offering1.svg"  :height="$vuetify.breakpoint.name === 'xs' ? '60px' : '150px'"  alt="">
                         </v-col>
-                        <v-col cols="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
-                            <div class="text-subtitle-1 text-md-h6 font-weight-bold">Planning Information</div> 
-                            <p>We think regarding the activities required to achieve a <br> desired goal based on foresight, the fundamental capacity for mental time travel.</p>                          
+                        <v-col cols="10" md="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
+                            <div class="text-subtitle-1 text-md-h6 font-weight-medium font-weight-md-bold">Planning Information</div> 
+                            <p>We think regarding the activities required to achieve a  desired goal based on foresight, the fundamental capacity for mental time travel.</p>                          
                         </v-col>
                         </v-row>
                     </v-col>

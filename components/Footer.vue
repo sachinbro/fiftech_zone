@@ -72,7 +72,7 @@
         </div>
     
     <v-footer dark>
-        <div><p class="text--left" > &copy;Copyright {{ new Date().getFullYear() }} Fiftech Zone. All rights reserved.</p> </div>
+        <div><p class="text--left text-caption text-md-subtitle-1" > &copy;Copyright {{ new Date().getFullYear() }} Fiftech Zone. All rights reserved.</p> </div>
     </v-footer>
 </div>
     
