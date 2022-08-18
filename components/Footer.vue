@@ -84,7 +84,7 @@
     }
     .curve{
         height: 55vh;
-        background-image: url("../static/Footer/Footerback.png");
+        background-image: url("../static/Footer/footerback.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: top;
