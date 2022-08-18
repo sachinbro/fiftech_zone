@@ -1,5 +1,5 @@
 <template>
- <v-app  :class="(screen === 'small') ?  'smallbackground' : 'background'">
+ <v-app  :class="(screen === 'small') ?  'smallbackground' : 'homebackground'">
   <Header />
   <v-main>
       <Nuxt />
@@ -46,11 +46,10 @@ export default {
     
  }
  .smallbackground{
-    height: 110vh;
+    height: 55vh;
     background-image: url("../static/sections/mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
-    background-position: center;
     background-origin: content-box;
 }
  .homebackground{

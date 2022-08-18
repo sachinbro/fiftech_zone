@@ -23,11 +23,11 @@ export default{
                         <div>GO DIGITAL,</div>
                         <div>LIVE SMART.</div>
                     </div>
-                    <div class="hidden-md-and-up text-h4 font-weight-medium mt-16 ml-sm-5">
+                    <div class="hidden-md-and-up text-h5 font-weight-medium  ml-sm-5">
                         <div>GO DIGITAL,</div>
                         <div>LIVE SMART.</div>
                     </div>
-                    <div class="mt-0 mt-sm-6 text-h6 text--bold">
+                    <div class="mt-0 mt-sm-6 text-caption text--bold">
                         <div>Digitalize your business with our product services.</div>
                         <div> Let the world know where you stand in the market.</div>
                     </div>
@@ -36,7 +36,7 @@ export default{
                     <img class="hidden-sm-and-down" src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
                 </v-col>
                 <v-col class="hidden-md-and-up" cols="6">
-                    <v-img  :src="require('../../../static/landing area image.svg')" aspect-ratio="2" height="400" width="600" alt="" > </v-img>
+                    <v-img  :src="require('../../../static/landing area image.svg')" aspect-ratio="2" height="300" width="600" alt="" > </v-img>
                 </v-col>
             </v-row>
             <v-row class="d-none d-sm-flex  justify-center" >
@@ -77,7 +77,7 @@ export default{
                 <v-col cols="2"></v-col>
             </v-row>
             <v-row class="d-none d-sm-flex  mt-n8">
-                <v-col class="d-flex flex-column align-center  text-caption ">
+                <v-col class="d-flex flex-column align-center text-caption ">
                     <div class="text-subtitle-1">Developing an effective strategy</div>
                     <div>Five stages of progress: setting goals or objectives, analysis,</div>
                     <div>strategy formation, strategy implementation, and strategy monitoring.</div>
@@ -98,7 +98,7 @@ export default{
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
                         <v-card-text class=" rounded-circle  text-center">
-                            <div class="multilayer-circle white--text"> 
+                            <div class="small-multilayer-circle white--text text-caption"> 
                                 1
                             </div>
                         </v-card-text>
@@ -108,16 +108,15 @@ export default{
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
-                    <div class="text-subtitle-1">Developing an effective strategy</div>
-                    <div>Five stages of progress: setting goals or objectives, analysis,</div>
-                    <div>strategy formation, strategy implementation, and strategy monitoring.</div>
+                    <div class="text-subtitle-2 font-wight-bold">Developing an effective strategy</div>
+                    <div class="px-4 text-center">Five stages of progress: setting goals or objectives, analysis,strategy formation, strategy implementation, and strategy monitoring.</div>
                 </v-col>
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
                         <v-card-text class=" rounded-circle  text-center">
-                            <div class="multilayer-circle white--text"> 
+                            <div class="small-multilayer-circle white--text"> 
                                 2
                             </div>
                         </v-card-text>
@@ -127,7 +126,7 @@ export default{
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
-                    <div class="text-subtitle-1">Software development process</div>
+                    <div class="text-subtitle-2">Software development process</div>
                     <div>We employ 5 phases of software development process:</div>
                     <div>research, ideation, design, development and iteration.</div>
                 </v-col>
@@ -136,7 +135,7 @@ export default{
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
                         <v-card-text class=" rounded-circle  text-center">
-                            <div class="multilayer-circle white--text"> 
+                            <div class="small-multilayer-circle white--text"> 
                                 3
                             </div>
                         </v-card-text>
@@ -146,9 +145,8 @@ export default{
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
-                     <div class="text-subtitle-1">Automated testing and support</div>
-                    <div>Automate some repetitive but necessary tasks in formalized</div>
-                    <div>testing process already in place.  </div>
+                     <div class="text-subtitle-2">Automated testing and support</div>
+                    <div class="text-center">Automate some repetitive but necessary tasks in formalized testing process already in place.  </div>
                 </v-col>
             </v-row>
         </v-container>
@@ -184,6 +182,14 @@ export default{
   box-shadow: 0px 0px 0px 10px rgba(155, 81, 224, 1), 0px 0px 0px 20px rgba(155, 81, 224, 0.69), 0px 0px 0px 30px rgba(155, 81, 224, 0.39);
   width: 30px;
   height:30px;
+  margin: 3em;
+  background-color: rgba(155, 81, 224, 1);
+}
+.small-multilayer-circle{
+  border-radius: 50%;
+  box-shadow: 0px 0px 0px 10px rgba(155, 81, 224, 1), 0px 0px 0px 15px rgba(155, 81, 224, 0.69), 0px 0px 0px 20px rgba(155, 81, 224, 0.39);
+  width: 15px;
+  height:15px;
   margin: 3em;
   background-color: rgba(155, 81, 224, 1);
 }
