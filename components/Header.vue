@@ -79,7 +79,7 @@ export default{
 </script>
 <template>
 <div >
-    <v-app-bar flat elevation="0"  height="50"   :class="makeSticky ? background : ''" color="transparent">
+    <v-app-bar  flat elevation="1"  height="50"   :class="makeSticky ? background : ''" color="transparent">
         <div class="d-flex align-start mb-3 ">
             <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
             
@@ -108,6 +108,7 @@ export default{
     class="stick "
     :class="makeSticky ? background : ''"
     :app="makeSticky"
+    hide-on-scroll="true"
     elevation="0"
     height="70"
     >   <div class="pl-4 pl-md-16">

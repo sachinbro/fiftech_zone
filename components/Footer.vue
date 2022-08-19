@@ -71,8 +71,8 @@
             </div>
         </div>
     
-    <v-footer dark>
-        <div><p class="text--left text-caption text-md-subtitle-1" > &copy;Copyright {{ new Date().getFullYear() }} Fiftech Zone. All rights reserved.</p> </div>
+    <v-footer dark class="end-footer" height="30px">
+        <p class="text--left text-caption text-md-subtitle-2" > &copy;Copyright {{ new Date().getFullYear() }} Fiftech Zone. All rights reserved.</p> 
     </v-footer>
 </div>
     
@@ -92,10 +92,11 @@
     }
     .flat{
         height: 45vh;
-        background-image: url("../static/Footer/Footer1.png");
+        background-image: url("../static/Footer/flatfooter.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: top;
         background-origin: content-box;
     }
+    
 </style>

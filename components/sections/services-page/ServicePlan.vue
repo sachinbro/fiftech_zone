@@ -54,7 +54,7 @@ export default {
 <template>
 <div class="mt-12">
         <div>
-            <v-row class="my-16">
+            <v-row class="my-16 basic">
                 <v-col cols="3"></v-col>
                 <v-col class="text-center" cols="4">
                     <v-row class="flex-column">
@@ -70,7 +70,7 @@ export default {
                         
                     </v-row>
                 </v-col>
-                <v-col>
+                <v-col >
                     <img src="../../../static/sections/Servicespage/Image 43.png" height="240px" alt="">
                 </v-col>
                 <v-col cols="1"></v-col>
@@ -223,3 +223,14 @@ export default {
         </div>
     </div> -->
 </template>
+<style scoped>
+.basic{
+/*         
+        height: 80vh;
+        background-image: url("../../../static/sections/Servicespage/sideleft.png");
+        background-repeat: no-repeat;
+        background-size: 50% 100%;
+        background-position: left;
+        background-origin: content-box; */
+}
+</style>
