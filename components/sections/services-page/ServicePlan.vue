@@ -54,7 +54,7 @@ export default {
 <template>
 <div class="mt-12">
         <div>
-            <v-row class="my-16 basic">
+            <v-row class="my-16 left">
                 <v-col cols="3"></v-col>
                 <v-col class="text-center" cols="4">
                     <v-row class="flex-column">
@@ -71,14 +71,14 @@ export default {
                     </v-row>
                 </v-col>
                 <v-col >
-                    <img src="../../../static/sections/Servicespage/Image 43.png" height="240px" alt="">
+                    <img src="../../../static/sections/Servicespage/Image 43.png" height="340px" alt="">
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
-            <v-row class="my-16">
+            <v-row class="my-16 right">
                 <v-col cols="3"></v-col>
                 <v-col cols="4">
-                    <img src="../../../static/sections/Servicespage/Image 41.png" height="240px" alt="">
+                    <img src="../../../static/sections/Servicespage/Image 41.png" height="340px" alt="">
                 </v-col>
                 <v-col class="text-center" cols="4">
                     <v-row>
@@ -94,7 +94,7 @@ export default {
                     </v-row>
                 </v-col>
             </v-row>
-            <v-row class="my-16">
+            <v-row class="my-16 left">
                 <v-col cols="3"></v-col>
                 <v-col class="text-center" cols="4">
                     <v-row class="flex-column">
@@ -111,15 +111,15 @@ export default {
                     </v-row>
                 </v-col>
                 <v-col>
-                    <img src="../../../static/sections/Servicespage/Image 42.png" height="240px" alt="">
+                    <img src="../../../static/sections/Servicespage/Image 42.png" height="340px" alt="">
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
             
-             <v-row class="my-16">
+             <v-row class="my-16 right">
                 <v-col cols="3"></v-col>
                 <v-col cols="4">
-                    <img src="../../../static/sections/Servicespage/Image 41.png" height="240px" alt="">
+                    <img src="../../../static/sections/Servicespage/Image 44.png" height="340px" alt="">
                 </v-col>
                 <v-col class="text-center" cols="4">
                     <v-row>
@@ -224,13 +224,24 @@ export default {
     </div> -->
 </template>
 <style scoped>
-.basic{
-/*         
-        height: 80vh;
+.left{
+       display: flex;
+       align-content: center; 
+        height: 70vh;
         background-image: url("../../../static/sections/Servicespage/sideleft.png");
         background-repeat: no-repeat;
         background-size: 50% 100%;
         background-position: left;
-        background-origin: content-box; */
+        background-origin: content-box;
+}
+.right{
+       display: flex;
+       align-content: center; 
+        height: 70vh;
+        background-image: url("../../../static/sections/Servicespage/side.png");
+        background-repeat: no-repeat;
+        background-size: 55% 100%;
+        background-position: right;
+        background-origin: content-box;
 }
 </style>
