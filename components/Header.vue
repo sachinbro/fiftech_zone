@@ -81,8 +81,11 @@ export default{
 <div >
     <v-app-bar  flat elevation="1"  height="50"   :class="makeSticky ? background : ''" color="transparent">
         <div class="d-flex align-start mb-3 ">
-            <v-icon v-for="icon in socialIcons" :key="icon" class="mx-1" size="large" dark>mdi-{{icon}}</v-icon>
-            
+            <span v-for="icon in socialIcons" :key="icon" >
+            <v-hover v-slot="{hover}">
+                <v-icon  class="mx-1" :color="hover ? 'black': ''" size="large" dark>mdi-{{icon}}</v-icon>
+            </v-hover>
+            </span>
         </div>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
@@ -90,15 +93,15 @@ export default{
         <v-row class="d-flex justify-space-around mb-4 mt-0 mt-sm-2 ">
             <div>
                 <v-icon color="white">mdi-phone</v-icon>
-                <span class="white--text text-caption hidden-sm-and-down">9846907090</span>
+                <span class="white--text text-caption hidden-sm-and-down hover">981-5790619</span>
             </div>
             <div>
                 <v-icon color="white">mdi-email-outline</v-icon>
-                <span class="white--text text-caption hidden-sm-and-down">fiftechzone@gmail.com</span>
+                <span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span>
             </div>
             <div>
                 <v-icon dark>mdi-clock-outline</v-icon>
-                <span class="white--text text-caption hidden-sm-and-down">10 A.M to 5 P.M</span>
+                <span class="white--text text-caption hidden-sm-and-down hover">10 A.M to 5 P.M</span>
             </div>
         </v-row>
         <v-spacer class="d-none d-sm-flex"></v-spacer>
@@ -113,7 +116,7 @@ export default{
     height="70"
     >   <div class="pl-4 pl-md-16">
         <a href="/">
-            <img class="" src="../static/icons/fiftechlogo.svg" :height="screen">
+            <img class="mt-md-2" src="../static/icons/fiftechlogo.svg" :height="screen">
         </a>
         </div>
             
@@ -185,4 +188,10 @@ export default{
         background-color: white;
         color: #9B51E0 !important;
     }
+    .hover:hover{
+        color: rgb(182, 173, 173) !important;
+    }
+    .v-application .elevation-1 {
+  box-shadow: 0px 2px 1px -1px rgba(255, 255, 255, 0.2), 0px 1px 1px 0px rgba(255, 255, 255, 0.14), 0px 1px 3px 0px rgba(255, 255, 255, 0.12) !important;
+}
 </style>

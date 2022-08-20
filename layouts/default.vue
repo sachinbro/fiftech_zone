@@ -70,7 +70,7 @@ export default {
 .otherNavBackground{
    background-image: url("../static/sections/Servicespage/background.png");
     background-repeat: no-repeat;
-    background-size: 100% 70%;
+    background-size: 100% 65%;
     background-position: top;
     background-origin: content-box;
     top: -2px;
