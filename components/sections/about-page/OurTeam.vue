@@ -27,13 +27,13 @@
     }
 </script>
 <template>
-    <div class="mt-14 background">
+    <div class="mt-14" :class="$vuetify.breakpoint.name !== 'xs' ? 'background': ''">
         <div class="pt-10">
             <p class="text-center text-h4"> MEET OUR TEAM <br> THE PROFESSIONALS</p>
             <p class="text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsam?</p>
             <v-row class="mt-16 d-flex justify-center ">
                <v-col cols="1"></v-col>
-                <v-col cols="3" class="d-flex flex-column justify-center align-center mt-4"
+                <v-col cols="10" sm="3" class="d-flex flex-column justify-center align-center mt-4"
                 v-for="(professional, index) in professionals"
                 :key="index"
                 >

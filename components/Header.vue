@@ -20,6 +20,10 @@ export default{
 
             links: [
                 {
+                    name: 'Home',
+                    url: '/'
+                },
+                {
                     name: 'About Us',
                     url: '/about'
                 },
@@ -111,7 +115,7 @@ export default{
     class="stick "
     :class="makeSticky ? background : ''"
     :app="makeSticky"
-    hide-on-scroll="true"
+    :hide-on-scroll="true"
     elevation="0"
     height="70"
     >   <div class="pl-4 pl-md-16">

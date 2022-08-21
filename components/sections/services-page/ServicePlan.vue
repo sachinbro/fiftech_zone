@@ -55,55 +55,59 @@ export default {
 <div class="mt-12">
         <div>
             <v-row class="my-16 left">
-                <v-col cols="3"></v-col>
-                <v-col class="text-center" cols="4">
+                <v-col cols="2" sm="3"></v-col>
+                <v-col class="text-center" cols="8" sm="4">
                     <v-row class="flex-column">
                         
                             <p class="text-left"><span class="text-h5 " style="border-bottom: 3px solid #707070">Basic Plan</span></p>
                             <ul class="text-left">
                                 <li v-for="plan in plans.basic" :key="plan" class="my-1">{{plan}}</li>
                             </ul>
-                            <div class="ml-10 mt-2 d-flex ">
+                            <div class="ml-2 ml-sm-10 mt-2 d-flex ">
                                 <PriceBtn price="20,000"/>
                             </div>
                         
                         
                     </v-row>
                 </v-col>
-                <v-col >
+                <v-col cols="12" sm="auto" >
                     <img src="../../../static/sections/Servicespage/Image 43.png" height="340px" alt="">
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
             <v-row class="my-16 right">
-                <v-col cols="3"></v-col>
-                <v-col cols="4">
+                <v-col cols="0" sm="3"></v-col>
+                <v-col cols="4" class="d-none d-sm-block">
                     <img src="../../../static/sections/Servicespage/Image 41.png" height="340px" alt="">
                 </v-col>
-                <v-col class="text-center" cols="4">
+                <v-col class="text-center" cols="12" sm="4">
                     <v-row>
-                        <v-col class="text-left">
-                            <p class="text-left"><span class="text-h5 " style="border-bottom: 3px solid #707070">Standard Plan</span></p>
-                            <ul class="text-left">
-                                <li v-for="plan in plans.standard" :key="plan" class="my-1">{{plan}}</li>
+                       <v-col cols="2" md="0"></v-col>
+                        <v-col class=" text-left  ml-sm-0" cols="auto" sm="11">
+                            <p class=""><span class="text-h5 " style="border-bottom: 3px solid #707070">Standard Plan</span></p>
+                            <ul class="">
+                                <li v-for="plan in plans.standard" :key="plan" class="my-sm-1">{{plan}}</li>
                             </ul>
-                            <div class="mx-10"><PriceBtn price="60,000"/></div>
-                            
+                            <div class="mt-2 mx-sm-10"><PriceBtn price="60,000"/></div>
                         </v-col>
-                        <v-col cols="1"></v-col>
+                        <v-col cols="0" sm="1"></v-col>
                     </v-row>
+                </v-col>
+                
+                <v-col cols="4" class="d-block d-sm-none">
+                    <img src="../../../static/sections/Servicespage/Image 41.png" height="340px" alt="">
                 </v-col>
             </v-row>
             <v-row class="my-16 left">
-                <v-col cols="3"></v-col>
-                <v-col class="text-center" cols="4">
+                <v-col cols="2" sm="3"></v-col>
+                <v-col class="text-center" cols="6" sm="4">
                     <v-row class="flex-column">
                         
                             <p class="text-left"><span class="text-h5 " style="border-bottom: 3px solid #707070">Premium Plan</span></p>
                             <ul class="text-left">
                                 <li v-for="plan in plans.premium" :key="plan" class="my-1">{{plan}}</li>
                             </ul>
-                            <div class="ml-10 mt-2 d-flex ">
+                            <div class="mx-sm-10 mt-2 d-flex ">
                                 <PriceBtn price="20,000"/>
                             </div>
                         
@@ -118,12 +122,13 @@ export default {
             
              <v-row class="my-16 right">
                 <v-col cols="3"></v-col>
-                <v-col cols="4">
+                <v-col cols="4" class="d-none d-sm-block">
                     <img src="../../../static/sections/Servicespage/Image 44.png" height="340px" alt="">
                 </v-col>
-                <v-col class="text-center" cols="4">
+                <v-col class="text-center" cols="12" sm="4">
                     <v-row>
-                        <v-col class="text-left">
+                        <v-col cols="2" md="0"></v-col>
+                        <v-col class="text-left  ml-sm-0" cols="9" sm="11">
                             <p class="text-left"><span class="text-h5 " style="border-bottom: 3px solid #707070">Corporate Plan</span></p>
                             <ul class="text-left">
                                 <li v-for="plan in plans.corporate" :key="plan" class="my-1">{{plan}}</li>
@@ -133,6 +138,9 @@ export default {
                         </v-col>
                         <v-col cols="1"></v-col>
                     </v-row>
+                </v-col>
+                 <v-col cols="4" class="d-block d-sm-none">
+                    <img src="../../../static/sections/Servicespage/Image 44.png" height="340px" alt="">
                 </v-col>
             </v-row>
         </div>
@@ -224,7 +232,7 @@ export default {
     </div> -->
 </template>
 <style scoped>
-.left{
+/* .left{
        display: flex;
        align-content: center; 
         height: 70vh;
@@ -243,5 +251,5 @@ export default {
         background-size: 55% 100%;
         background-position: right;
         background-origin: content-box;
-}
+} */
 </style>

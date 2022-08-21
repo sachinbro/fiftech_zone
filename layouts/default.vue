@@ -53,7 +53,7 @@ export default {
     
  }
  .smallbackground{
-    height: 55vh;
+    height: 70vh;
     background-image: url("../static/sections/mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;

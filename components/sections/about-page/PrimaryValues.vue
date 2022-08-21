@@ -45,21 +45,21 @@
             <v-col>
 
             </v-col>
-            <v-col cols="6">
-                <v-timeline>
+            <v-col cols="12" md="6">
+                <v-timeline :dense="$vuetify.breakpoint.smAndDown">
                 <v-timeline-item 
                 v-for="value in primaryValues"
                 :key="value.title"
-                small>
-                    <img :src="require(`../../../static/sections/Aboutpage/${value.img}`)" height="250px" alt="" >
-                    <template v-slot:opposite>
-                        <v-card elevation="0">
-                            <v-card-title>{{value.title}}</v-card-title>
-                            <v-card-text>
+                small
+                >
+                    <img slot="opposite" :src="require(`../../../static/sections/Aboutpage/${value.img}`)" :height="$vuetify.breakpoint.name === 'xs' ? '150px' : '250px'" alt="" >
+                        <v-card elevation="0" >
+                            <v-card-title class="text-subtitle-1 text-sm-h6">{{value.title}}</v-card-title>
+                            <v-card-text class="text-caption text-sm-body-2">
                                 {{value.description}}
                             </v-card-text>
                         </v-card>
-                    </template>
+                    
                 </v-timeline-item>
             </v-timeline>
             </v-col>
@@ -68,3 +68,6 @@
         
     </div>
 </template>
+<style scoped>
+
+</style>
