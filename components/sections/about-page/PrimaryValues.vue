@@ -7,19 +7,19 @@
                         title: 'Integrity',
                         description: 'There are many variations of lorem duos lora spassages of Lorem Ipsum available internet tend to repeat predefined.',
                         img: 'Image 6.png',
-                        
+
                     },
                      {
                         title: 'Accountability',
                         description: 'There are many variations of lorem duos lora spassages of Lorem Ipsum available internet tend to repeat predefined.',
                         img: 'Image 7.png',
-                        
+
                     },
                     {
                         title: 'Diligence',
                         description: 'There are many variations of lorem duos lora spassages of Lorem Ipsum available internet tend to repeat predefined.',
                         img: 'Image 8.png',
-                        
+
                     },
                     {
                         title: 'Perseverance',
@@ -31,7 +31,7 @@
                         description: 'There are many variations of lorem duos lora spassages of Lorem Ipsum available internet tend to repeat predefined.',
                         img: 'Image 10.png',
                     }
-                    
+
                 ]
             }
         }
@@ -47,7 +47,7 @@
             </v-col>
             <v-col cols="12" md="6">
                 <v-timeline :dense="$vuetify.breakpoint.smAndDown">
-                <v-timeline-item 
+                <v-timeline-item
                 v-for="value in primaryValues"
                 :key="value.title"
                 small
@@ -59,15 +59,20 @@
                                 {{value.description}}
                             </v-card-text>
                         </v-card>
-                    
+
                 </v-timeline-item>
             </v-timeline>
             </v-col>
             <v-col></v-col>
         </v-row>
-        
+
     </div>
 </template>
 <style scoped>
+@media only screen and (max-width: 767px) {
 
+.v-card__title{
+  padding-bottom: 2px !important;
+}
+}
 </style>

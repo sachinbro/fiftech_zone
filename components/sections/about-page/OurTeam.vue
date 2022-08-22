@@ -27,10 +27,10 @@
     }
 </script>
 <template>
-    <div class="mt-14" :class="$vuetify.breakpoint.name !== 'xs' ? 'background': ''">
+    <div class="mt-14 mb-6" :class="$vuetify.breakpoint.name !== 'xs' ? 'background': ''">
         <div class="pt-10">
-            <p class="text-center text-h4"> MEET OUR TEAM <br> THE PROFESSIONALS</p>
-            <p class="text-center"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsam?</p>
+            <p class="text-center text-h5 text-sm-h4"> MEET OUR TEAM <br> THE PROFESSIONALS</p>
+            <p class="text-center "> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsam?</p>
             <v-row class="mt-16 d-flex justify-center ">
                <v-col cols="1"></v-col>
                 <v-col cols="10" sm="3" class="d-flex flex-column justify-center align-center mt-4"
@@ -39,7 +39,7 @@
                 >
                     <v-avatar size="200"><img :src="require(`../../../static/sections/Aboutpage/${professional.img}`)"  alt="" /></v-avatar>
                     <p class="text-center text-h6">{{professional.name}} <br>{{professional.post}}</p>
-                    <p class="text-caption-1">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit.</p>
+                    <p class="text-caption-1 text-center">Lorem ipsum dolor sit amet consectetur, <br> adipisicing elit.</p>
                     <div class="d-flex justify-center">
                         <v-icon class="mx-2">mdi-facebook</v-icon>
                          <v-icon class="mx-2">mdi-instagram</v-icon>
