@@ -96,12 +96,14 @@ export default{
         <v-spacer></v-spacer>
         <v-row class="d-flex justify-space-around mb-4 mt-0 mt-sm-2 ">
             <div>
-                <v-icon color="white">mdi-phone</v-icon>
+                <a href="tel:+9779815790619" class="d-flex d-sm-none"><v-icon color="white">mdi-phone</v-icon></a>
+                
+                <v-icon class="d-none d-md-inline" color="white">mdi-phone</v-icon>
                 <span class="white--text text-caption hidden-sm-and-down hover">981-5790619</span>
             </div>
             <div>
                 <v-icon color="white">mdi-email-outline</v-icon>
-                <span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span>
+                <a href="mailto:fiftechzone@gmail.com"><span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span></a>  
             </div>
             <div>
                 <v-icon dark>mdi-clock-outline</v-icon>

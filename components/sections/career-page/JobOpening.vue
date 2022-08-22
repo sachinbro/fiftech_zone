@@ -94,17 +94,17 @@ export default{
 <template>
 <div v-if="jobs" class="ma-10">
     <div class="text-center mt-16">
-        <p class="text-h4 font-weight-medium">Job Openings</p>
-        <p class="text--secondary text-subtitle-1">Sample text. Click to select the text box. Click again or double click to start editing the text.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        <p class="text-h5 text-sm-h4 font-weight-medium">Job Openings</p>
+        <p class="text--secondary text-caption text-sm-subtitle-1">Sample text. Click to select the text box. Click again or double click to start editing the text.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
     </div>
     <div v-for="job in jobs"
     :key="job.id" class="mt-10">
        <v-row>
         <v-col></v-col>
-        <v-col class="rounded-xl pl-8" cols="10" style="border: 1px solid #707070">
+        <v-col class="rounded-xl pl-sm-8" cols="12" sm="10" style="border: 1px solid #707070">
             <div class="d-flex">
-                <ul class="text-h5"><li>{{job.post}}</li></ul>
-                <span class="mx-5"><v-btn elevation="0">Apply now</v-btn></span>
+                <ul class="text-h6 text-sm-h5"><li>{{job.post}}</li></ul>
+                <span class="mx-sm-5"><v-btn elevation="0">Apply now</v-btn></span>
             </div>
             <div>
                 <div class="ml-16 mt-4">
