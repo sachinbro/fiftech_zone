@@ -39,7 +39,7 @@ export default{
                     <v-img  :src="require('../../../static/landing area image.svg')" aspect-ratio="2" height="300" width="600" alt="" > </v-img>
                 </v-col>
             </v-row>
-            <v-row class="d-none d-sm-flex  justify-center" >
+            <v-row class="d-none d-sm-flex  justify-center mt-sm-10 mt-lg-0" >
                 <div style="font-size: 25px;" >
                     <span style="color: #B051E0; ">Learn More </span><span style="color:#ABB8C3;">about fiftech's unique features.</span>
                 </div>
@@ -49,7 +49,7 @@ export default{
                 <div style="color:#3D2F2F; "> to deliver outstanding results.</div>
             </v-row>
             <v-row class="white--text  d-none d-sm-flex justify-space-around" >
-                <v-col cols="1"></v-col>
+                <v-col cols="0" md="1"></v-col>
                 <v-col class="tasks mt-2" cols="1">
                         <div class="hoverEffect text-center">
                             <div class="multilayer-circle font-weight-bold white--text"> 
@@ -58,7 +58,7 @@ export default{
                         </div>
                 
                 </v-col>
-                <v-col lg="3" md="2" class="horizontal-line"></v-col>
+                <v-col sm=2 lg="3" md="2"  class="horizontal-line ml-sm-16 ml-md-0"></v-col>
                 <v-col cols="1" >
                     <div class=" text-center font-weight-bold hoverEffect">
                         <div class="multilayer-circle ">
@@ -66,7 +66,7 @@ export default{
                         </div>
                     </div>
                 </v-col>
-                <v-col lg="3" md="2" class="horizontal-line"></v-col>
+                <v-col sm="2" lg="3" md="2"  class="horizontal-line ml-sm-16 ml-md-0"></v-col>
                 <v-col cols="1">
                     <div class="   text-center font-weight-bold  hoverEffect">
                         <div class="multilayer-circle ">
@@ -74,7 +74,7 @@ export default{
                         </div>
                     </div>
                 </v-col>
-                <v-col cols="2"></v-col>
+                <v-col cols="0" md="2" sm="1"></v-col>
             </v-row>
             <v-row class="d-none d-sm-flex  mt-n8">
                 <v-col class="d-flex flex-column align-center text-caption ">

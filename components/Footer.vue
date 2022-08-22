@@ -7,7 +7,7 @@
         },
         watch:{
             '$route'(to,from){
-                
+
                 if(to.path == "/"){
                     this.background = "curve"
                     return
@@ -22,7 +22,7 @@
         <div class=" d-flex align-end" :class="background" id="footer">
             <div class="footer-main white--text">
                 <v-row class="d-none d-sm-flex align-end">
-                    
+
                     <v-col class="">
                     <img src="../static/Footer/Group 318.png" alt="" height="170px" class="px-16">
                         <p class="mt-n10 pl-3">Digitalize your business with our product services. Let the world know where you stand in the market</p>
@@ -58,32 +58,37 @@
                         </div>
                         <div class="px-4 d-flex align-center">
                             <img src="../static/Footer/map masked.png" height="80px" alt="">
-                            <v-btn class="" rounded>CLick to view map</v-btn>    
+                            <v-btn class="" rounded>CLick to view map</v-btn>
                         </div>
                     </v-col>
                     <v-col cols="1"></v-col>
                 </v-row>
                 <v-row class="ml-10 d-flex d-sm-none flex-column">
-                    <p class="text-h4 font-weight-medium">Get in Touch</p>
-                    <img src="../static/Footer/Group 318.png" alt="" height="100px" width="100px" class="left">
+                    <p class="text-h5 font-weight-medium">Get in Touch</p>
+                     <div class="">
+                    <p><v-icon dark>mdi-map-marker</v-icon> Shantinagar, Kathmandu</p>
+                    <p><a href="mailto:fiftechzone@gmail.com" class="link"><v-icon dark>mdi-email-outline</v-icon> fiftechzone@gmail.com</a> </p>
+                    <p><a href="tel:+97798115790629" class="link"><v-icon dark>mdi-phone</v-icon> 981-15790629</a></p>
+                    </div>
+                    <img src="../static/Footer/Group 318.png" alt="" height="90px" width="100px" class="left">
                     <p class="mt-n4 text-caption">Digitize your business with our product service. <br> Let the world know where you stand in the market</p>
                 </v-row>
             </div>
         </div>
-    
+
     <v-footer dark class="end-footer" height="30px">
-        <p class="text--left text-caption text-md-subtitle-2" > &copy;Copyright {{ new Date().getFullYear() }} Fiftech Zone. All rights reserved.</p> 
+        <p class="text--left text-caption text-md-subtitle-2" > &copy;Copyright {{ new Date().getFullYear() }} Fiftech Zone. All rights reserved.</p>
     </v-footer>
 </div>
-    
-    
+
+
 </template>
 <style scoped>
     .footer-main {
         /* background: transparent linear-gradient(11deg, #9B51E0 0%, #347FE2 76%, #0693E3 100%) 0% 0% no-repeat padding-box; */
     }
     .curve{
-        height: 55vh;
+        height: 60vh;
         background-image: url("../static/Footer/footerback.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
@@ -91,12 +96,16 @@
         background-origin: content-box;
     }
     .flat{
-        height: 45vh;
+        height: 40vh;
         background-image: url("../static/Footer/flatfooter.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;
         background-position: top;
         background-origin: content-box;
     }
-    
+    .link{
+      text-decoration: none;
+      color: white;
+    }
+
 </style>

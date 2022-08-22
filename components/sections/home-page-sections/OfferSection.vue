@@ -23,7 +23,7 @@ export default {
                     <v-col cols="12" align="center" lg="6" md="6">
                         
                         <v-row no-gutters align="center">
-                            <v-col cols="2" md="4" class="pa-1 pa-md-0 ml-md-n4 ml-md-0 ml-sm-n16 ">
+                            <v-col cols="2" md="4" class="pa-1 pa-md-0 ml-md-n4 ml-md-0 ml-sm-n ">
                                 <img src="../../../static/sections/Homepage/offering2.svg" :height="$vuetify.breakpoint.name === 'xs' ? '60px' : '150px'"  alt="">
                             </v-col>
                         <v-col cols="10" md="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
@@ -42,7 +42,7 @@ export default {
                         </v-col>
                         <v-col cols="10" md="8" class="d-flex flex-column justify-center align-center text-caption ml-lg-n10">
                             <div class="text-subtitle-1 text-md-h6 font-weight-medium font-weight-md-bold">Planning Information</div> 
-                            <p>We think regarding the activities required to achieve a  desired goal based on foresight, the fundamental capacity for mental time travel.</p>                          
+                            <p class="px-sm-16 pa-md-0">We think regarding the activities required to achieve a  desired goal based on foresight, the fundamental capacity for mental time travel.</p>                          
                         </v-col>
                         </v-row>
                     </v-col>

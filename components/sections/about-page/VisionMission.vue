@@ -1,8 +1,8 @@
 <template>
-            <v-row class="mt-10">
-                <v-col cols="2"></v-col>
+            <v-row class="mt-10 pa-4 pa-sm-0">
+                <v-col cols="0" sm="1" md="2"></v-col>
                 <v-col >
-                    <v-card max-width="600px" class="vision" elevation="5">
+                    <v-card max-width="600px" :class="$vuetify.breakpoint.name === 'xs' ? '': 'vision'" elevation="5">
                     <v-card-title class="justify-center ">
                         Our vision
                     </v-card-title>
@@ -17,11 +17,10 @@
                     </v-card-text>
                 </v-card>
                 </v-col>
-                <v-col cols="1">
-
+                <v-col cols="0" sm="1">
                 </v-col>
                  <v-col>
-                    <v-card max-width="600px" elevation="8" class="mission">
+                    <v-card max-width="600px" elevation="8" :class="$vuetify.breakpoint.name === 'xs' ? '' : 'mission'">
                     <v-card-title class="justify-center">
                         Our Mission
                     </v-card-title>
@@ -36,7 +35,7 @@
                     </v-card-text>
                 </v-card>
                 </v-col>
-                <v-col cols="2"></v-col>
+                <v-col cols="0" sm="1" md="2"></v-col>
             </v-row>
 </template>
 <style scoped>

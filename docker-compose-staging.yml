@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  fiftech-production:
+    container_name: fiftech-production
+    hostname: fiftech-production
+    build:
+      context: ./
+      dockerfile: Dockerfile
+      args:
+        - NODE_ENV=development
+        - IMG=14
+        - LOCATION=fiftech-production
+    restart: always
+    user: root:root
+    env_file:
+      - ./.env
+    environment:
+      - NODE_ENV=${NODE_ENV}
+      - COMPOSE_PROJECT_NAME=fiftech-production
+    ports:
+      - ${PORT}:${PORT}

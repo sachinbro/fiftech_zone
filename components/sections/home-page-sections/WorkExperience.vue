@@ -8,17 +8,17 @@
                     <div>a truly unique experience.</div>
                     <div class="text-caption mr-14 mr-sm-0 text--secondary mt-2 mt-sm-6">This creates a work environment of trust. Having the trust of your employees gives you greater influence over them. At the same time, it makes them more motivated and committed to their work.</div>
                     <v-row>
-                        <v-col cols="1"  class="ml-n6 ml-md-0 "><img src="../../../static/sections/Homepage/Image 2.png" height="70px" width="60px"></v-col>
-                        <v-col sm="7" md="8" class="mt-sm-4 mt-2 ml-6 ml-sm-2">
-                            <div class="text-h6">Digital expericence</div>
+                        <v-col cols="1"  class="ml-n6 mt-1 mt-sm-0 ml-md-0 "><img src="../../../static/sections/Homepage/Image 2.png" :height=" $vuetify.breakpoint.name === 'xs'? '55px' : '70px'" width="60px"></v-col>
+                        <v-col sm="7" md="8" class="mt-2 ml-6 px-4 px-sm-3 mt-sm-4  ml-sm-2">
+                            <div class="text-h6  text-sm-h6">Digital expericence</div>
                             <div class="text-caption">User interaction with good digital touch-point, implies providing a fast, responsive and frictionless experience for the client.</div>
                             
                         </v-col>
                        
                     </v-row>
                     <v-row>
-                        <v-col cols="1" class="ml-n6 ml-md-0" ><img src="../../../static/sections/Homepage/Image 3.png" height="70px" width="60px"></v-col>
-                        <v-col sm="7" class="mt-sm-4 mt-4 ml-6 ml-sm-2">    
+                        <v-col cols="1" class="ml-n5 ml-sm-n6  mt-sm-0 ml-md-0" ><img src="../../../static/sections/Homepage/Image 3.png" :height=" $vuetify.breakpoint.name === 'xs'? '65px' : '70px'" :width="$vuetify.breakpoint.name === 'xs'? '50px' : '60px'"></v-col>
+                        <v-col sm="7" class="mt-2 ml-6 px-3 px-sm-3 mt-sm-4  ml-sm-2">    
                             <div class="text-h6">Branding strategy</div>
                             <div class="text-caption">The long term plan to achieve a series of long term goals that ultimately result in the identification.</div>
                             

@@ -46,9 +46,9 @@ export default {
       <div class="d-none d-sm-block">We deliver the</div>
       <div class="d-none d-sm-block">SOFTWARE you need,</div>
       <div class="d-none d-sm-block">no more, no less.</div>
-      <v-row class="text-subtitle-1">
-        <v-col>
-          <div @click="initiateAnimation()">
+      <v-row  class="text-subtitle-1">
+        <v-col  >
+          <div @click="initiateAnimation()" class="d-flex d-sm-block justify-center">
             <radial-progress-bar :diameter="150"
                                  innerStrokeColor=""
                                  startColor="white"
@@ -60,12 +60,14 @@ export default {
             >
 
             </radial-progress-bar>
-          </div>
+          </div >
           <span v-intersect="onIntersect"></span>
-          Completed {{ totalProject }} + projects
+          <div class="text-center text-sm-left">
+            Completed {{ totalProject }} + projects
+          </div>
         </v-col>
         <v-col>
-          <div @click="initiateAnimationCustomer()">
+          <div @click="initiateAnimationCustomer()" class="d-flex d-sm-block justify-center">
             <radial-progress-bar :diameter="150"
                                  innerStrokeColor=""
                                  startColor="white"
@@ -78,7 +80,9 @@ export default {
 
             </radial-progress-bar>
           </div>
-          {{ customerSatisfaction }}% customer satisfaction
+          <div class="text-center text-sm-left">
+            {{ customerSatisfaction }}% customer satisfaction
+          </div>
         </v-col>
       </v-row>
     </v-col>

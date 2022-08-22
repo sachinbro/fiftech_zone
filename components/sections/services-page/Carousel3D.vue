@@ -76,8 +76,8 @@ export default{
 </script>
 <template>
 <div>
-        <p class="text-h4 text-center font-weight-medium"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
-       <v-row class="mt-10">
+        <p class="text-h5 text-sm-h4 text-center font-weight-medium"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
+       <v-row class=" mt-sm-10">
         <v-col cols="1"></v-col>
         <v-col>
             <Carousel3d :controls-visible="true" 
@@ -103,11 +103,11 @@ export default{
         <v-col cols="1"></v-col>
         
     </v-row>
-    <v-row class="my-10">
-                <v-col cols="4"></v-col>
-                <v-col cols="6">
-                    <p class="text-h4 text-left">{{currentSlide.plansTitle}}</p>
-                    <ul class="text-left text-subtitle-2 font-weight-light text--secondary">
+    <v-row class="my-sm-10">
+                <v-col cols="2" sm="4"></v-col>
+                <v-col cols="8" sm="6">
+                    <p class="text-h6 text-md-h4 text-left">{{currentSlide.plansTitle}}</p>
+                    <ul class="text-left text-caption text-sm-subtitle-2 font-weight-light text--secondary">
                     <li v-for="plan in currentSlide.plans" :key="plan.title"> {{plan}} </li>
                     </ul>
                 </v-col>
