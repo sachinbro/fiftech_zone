@@ -142,7 +142,7 @@ export default{
             <v-col cols="3">
 
             </v-col>
-            <v-col v-if="!isSubmited" cols="6" class="rounded-xl  mt-8  px-10 elevation-2" style="border: 1px solid black">
+            <v-col v-if="!isSubmited" cols="12" sm="6" class="rounded-xl  mt-8  px-10 elevation-2" style="border: 1px solid black">
                 <v-form
                         @submit="submit"
                         ref="form"
@@ -183,6 +183,9 @@ export default{
                         <v-file-input
                         label="CV/Resume"
                         truncate-length="15"
+                        :items="items"
+                        :rules="[v => !!v || 'Item is required']"
+                        required
                         ></v-file-input>
 
                         <v-checkbox

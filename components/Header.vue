@@ -1,7 +1,9 @@
 <script>
 export default{
     created () {
-    window.addEventListener('scroll', this.onScroll);
+        if(process.client){
+            window.addEventListener('scroll', this.onScroll);
+        }
   },
   mounted(){
 
@@ -94,7 +96,7 @@ export default{
 <div >
     <v-app-bar  flat elevation="1"  height="50"   :class="makeSticky ? background : ''" color="transparent">
         <div class="d-flex align-start mb-3 ">
-            <span v-for="icon in socialIcons" :key="icon" >
+            <span v-for="icon in socialIcons" :key="icon.name" >
             <v-hover v-slot="{hover}">
                <a :href="icon.url" target="_blank"><v-icon  class="mx-1" :color="hover ? 'black': ''" size="large" dark>mdi-{{icon.name}}</v-icon></a>
             </v-hover>
