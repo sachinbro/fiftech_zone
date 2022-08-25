@@ -56,7 +56,7 @@ export default {
           success: colors.green.accent3,
           // navBackground: '#9B51E0',
           purpleish: '#B051E0',
-          gray: 'rgba(0,0,0,0.8)',
+          gray: '#000',
         },
       }
     }
@@ -65,6 +65,4 @@ export default {
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
-  target: 'static',
-  ssr: false,
 }

@@ -104,18 +104,18 @@ export default{
         <v-col class="rounded-xl pl-sm-8" cols="12" sm="10" style="border: 1px solid #707070">
             <div class="d-flex">
                 <ul class="text-h6 text-sm-h5"><li>{{job.post}}</li></ul>
-                <span class="mx-sm-5"><v-btn elevation="0">Apply now</v-btn></span>
+                <span class="mx-sm-5 d-none d-sm-flex"><v-btn elevation="0">Apply now</v-btn></span>
             </div>
             <div>
-                <div class="ml-16 mt-4">
+                <div class="ml-2 ml-sm-16 mt-4">
                     <v-icon>mdi-briefcase-variant</v-icon> Contract: {{job.contract}} <br>
                     <v-icon>mdi-clock </v-icon> {{job.time}}
 
                 </div>
-                
-                <div class="ml-8 mt-6">
+
+                <div class="ml-2 ml-sm-8 mt-6">
                     <p class="text-h6">About the Job</p>
-                    <p class="text-subtitle-2 text--secondary" style="width: 60%;">
+                    <p class="text-subtitle-2 text--secondary" :style="$vuetify.breakpoint.name === 'xs' ? {'width' : '100%'} : {'width': '60%'}">
                         {{job.aboutJob}}
                     </p>
                     <p class="text-h6 font-weight-medium">Requirements</p>
@@ -123,14 +123,17 @@ export default{
                 <ul class="mb-2">
                     <li v-for="requirement in job.requirements" :key="requirement" class="text-body-1 ml-3">{{requirement}}</li>
                 </ul>
-                <p class="ml-3" style="width: 70%;">If you’re interested in pursuing an engaging career working on full-time freelance jobs for exclusive clients, take the next step by clicking apply and filling out the short form to get started.</p>
-                </div>
+                <p class="ml-3" :style="$vuetify.breakpoint.name === 'xs' ? {'width' : '100%'} : {'width': '70%'}">If you’re interested in pursuing an engaging career working on full-time freelance jobs for exclusive clients, take the next step by clicking apply and filling out the short form to get started.</p>
+              <div class="text-center d-flex d-sm-none justify-center" >
+              <span class="mx-sm-5 "><v-btn elevation="0">Apply now</v-btn></span>
+              </div>
+            </div>
         </v-col>
         <v-col></v-col>
-       </v-row> 
+       </v-row>
            </div>
         <v-row v-if="!isSubmited" class="text-h5 font-weight-bold flex-column mt-16">
-           
+
             <div class="text-center mb-2">Apply Now</div>
             <div class="text-h5 text-center">Add your talent and experience to our growing team!</div>
         </v-row>
@@ -139,8 +142,8 @@ export default{
             <v-col cols="3">
 
             </v-col>
-            <v-col v-if="!isSubmited" cols="6" class="rounded-xl  mt-8  px-10 elevation-2" style="border: 1px solid black">
-                <v-form  
+            <v-col v-if="!isSubmited" cols="12" sm="6" class="rounded-xl  mt-8  px-10 elevation-2" style="border: 1px solid black">
+                <v-form
                         @submit="submit"
                         ref="form"
                         v-model="valid"
@@ -160,7 +163,7 @@ export default{
                         label="E-mail"
                         required
                         ></v-text-field>
-                        
+
                         <v-text-field
                         v-model="phone"
                         :rules="phoneRules"
@@ -180,6 +183,9 @@ export default{
                         <v-file-input
                         label="CV/Resume"
                         truncate-length="15"
+                        :items="items"
+                        :rules="[v => !!v || 'Item is required']"
+                        required
                         ></v-file-input>
 
                         <v-checkbox

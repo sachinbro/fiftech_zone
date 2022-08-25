@@ -96,7 +96,7 @@
         background-origin: content-box;
     }
     .flat{
-        height: 40vh;
+        height: 45vh;
         background-image: url("../static/Footer/flatfooter.png");
         background-repeat: no-repeat;
         background-size: 100% 100%;

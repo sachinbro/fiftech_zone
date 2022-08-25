@@ -1,5 +1,10 @@
 <script>
-import {Carousel3d, Slide } from 'vue-carousel-3d'
+// import {Carousel3d, Slide } from 'vue-carousel-3d'
+let Carousel3d, Slide = null;
+if(process.client){
+  Carousel3d = require('vue-carousel-3d').Carousel3d;
+  Slide = require('vue-carousel-3d').Slide;
+};
 export default{
     components: {Carousel3d,Slide},
     data(){
@@ -80,25 +85,27 @@ export default{
        <v-row class=" mt-sm-10">
         <v-col cols="1"></v-col>
         <v-col>
-            <Carousel3d :controls-visible="true" 
-            class=""
-            @after-slide-change="afterChange"
-            height="400" width="350" :border="10" space="270">
-            <Slide 
-            class="white elevation-10 rounded-lg"
-            v-for="(item, index) in items"
-            :key="item.title"
-            :index="index">
-                <figure>
-                    <p class="text-center font-weight-bold">{{item.title}}</p>
-                    <img class="px-16" :src="require(`../../../static/sections/Servicespage/${item.img}`)" height="220px" alt="" />
-                    <figcaption class="text-caption px-3 text--secondary">Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as
-                         its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.
-                          In addition, web developers may create content for the site.
-                    </figcaption>
-                </figure>
-            </Slide>
-        </Carousel3d>
+            <client-only>
+                <Carousel3d :controls-visible="true" 
+                class=""
+                @after-slide-change="afterChange"
+                height="400" width="350" :border="10" space="270">
+                <Slide 
+                class="white elevation-10 rounded-lg"
+                v-for="(item, index) in items"
+                :key="item.title"
+                :index="index">
+                    <figure>
+                        <p class="text-center font-weight-bold">{{item.title}}</p>
+                        <img class="px-16" :src="require(`../../../static/sections/Servicespage/${item.img}`)" height="220px" alt="" />
+                        <figcaption class="text-caption px-3 text--secondary">Web developers create and maintain websites. They are also responsible for the site's technical aspects, such as
+                             its performance and capacity, which are measures of a website's speed and how much traffic the site can handle.
+                              In addition, web developers may create content for the site.
+                        </figcaption>
+                    </figure>
+                </Slide>
+            </Carousel3d>
+            </client-only>
         </v-col>
         <v-col cols="1"></v-col>
         

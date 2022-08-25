@@ -1,13 +1,15 @@
 <script>
 export default{
     created () {
-    window.addEventListener('scroll', this.onScroll);
+        if(process.client){
+            window.addEventListener('scroll', this.onScroll);
+        }
   },
   mounted(){
-     
+
 
   },
-  
+
     data(){
         return {
             scroll: 0,
@@ -15,7 +17,16 @@ export default{
             background: "navBackground",
             drawer: false,
             socialIcons: [
-                "facebook", "twitter", "instagram",
+              {
+                name: "facebook",
+                url: "https://www.facebook.com/",
+              },{
+                name: "twitter",
+                url: "https://www.twitter.com/",
+              },{
+                name: "instagram",
+                url: "https://www.instagram.com/",
+              },
             ],
 
             links: [
@@ -53,7 +64,7 @@ export default{
             this.scroll = e.target.documentElement.scrollTop
             // console.log("scroll", e.target.documentElement.scrollTop);
         },
-        
+
     },
     computed:{
         makeSticky(){
@@ -66,7 +77,7 @@ export default{
           default : return '70px'
         }
       },
-        
+
     },
         watch:{
             '$route'(to,from){
@@ -77,7 +88,7 @@ export default{
                 this.background = "otherNvaBackground"
             }
         }
-    
+
 
 }
 </script>
@@ -85,9 +96,9 @@ export default{
 <div >
     <v-app-bar  flat elevation="1"  height="50"   :class="makeSticky ? background : ''" color="transparent">
         <div class="d-flex align-start mb-3 ">
-            <span v-for="icon in socialIcons" :key="icon" >
+            <span v-for="icon in socialIcons" :key="icon.name" >
             <v-hover v-slot="{hover}">
-                <v-icon  class="mx-1" :color="hover ? 'black': ''" size="large" dark>mdi-{{icon}}</v-icon>
+               <a :href="icon.url" target="_blank"><v-icon  class="mx-1" :color="hover ? 'black': ''" size="large" dark>mdi-{{icon.name}}</v-icon></a>
             </v-hover>
             </span>
         </div>
@@ -97,13 +108,13 @@ export default{
         <v-row class="d-flex justify-space-around mb-4 mt-0 mt-sm-2 ">
             <div>
                 <a href="tel:+9779815790619" class="d-flex d-sm-none"><v-icon color="white">mdi-phone</v-icon></a>
-                
+
                 <v-icon class="d-none d-md-inline" color="white">mdi-phone</v-icon>
                 <span class="white--text text-caption hidden-sm-and-down hover">981-5790619</span>
             </div>
             <div>
                 <v-icon color="white">mdi-email-outline</v-icon>
-                <a href="mailto:fiftechzone@gmail.com"><span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span></a>  
+                <a href="mailto:fiftechzone@gmail.com"><span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span></a>
             </div>
             <div>
                 <v-icon dark>mdi-clock-outline</v-icon>
@@ -112,7 +123,7 @@ export default{
         </v-row>
         <v-spacer class="d-none d-sm-flex"></v-spacer>
     </v-app-bar>
-    <v-app-bar 
+    <v-app-bar
     color="transparent"
     class="stick "
     :class="makeSticky ? background : ''"
@@ -125,20 +136,20 @@ export default{
             <img class="mt-md-2" src="../static/icons/fiftechlogo.svg" :height="screen">
         </a>
         </div>
-            
+
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-spacer></v-spacer>
         <v-row class="d-none d-sm-flex justify-space-around white--text" no-gutters>
             <nuxt-link v-for="link in links" :key="link.title" :to="`${link.url}`" class="white--text link px-3 py-1">{{link.name}}</nuxt-link>
-            
+
         </v-row>
         <v-spacer class="d-none d-sm-flex"></v-spacer>
         <v-row class="d-flex d-sm-none justify-end ">
             <v-app-bar-nav-icon  @click.stop="drawer= !drawer" dark ></v-app-bar-nav-icon>
-           
+
         </v-row>
-        
+
     </v-app-bar>
      <v-navigation-drawer class="mt-15"
             v-model="drawer"
@@ -147,7 +158,7 @@ export default{
             app
             right
             temporary
-            
+
             >
                     <div class="navBackground white--text d-flex align-center font-weight-bold">
                         <a href="/"><img src="../static/icons/fiftechlogo.svg" height="50" class="ml-2"></a><span class="ml-n4">iftechzone</span> </div>
@@ -156,7 +167,7 @@ export default{
                     dense
                 >
                     <v-list-item-group
-                    
+
                     active-class="deep-purple--text text--accent-4"
                     >
                     <v-list-item v-for="link in links" :key="link.title" style="border-bottom: 2px solid #DCD4D4; border-radius:0%;">
@@ -165,10 +176,10 @@ export default{
 
                     </v-list-item-group>
                 </v-list>
-            
+
             </v-navigation-drawer>
 </div>
-    
+
 </template>
 <style scoped>
     .navBackground {

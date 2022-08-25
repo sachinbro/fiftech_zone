@@ -1,6 +1,9 @@
 <script>
-import RadialProgressBar from 'vue-radial-progress'
-
+// import RadialProgressBar from 'vue-radial-progress'
+let RadialProgressBar = null
+if(process.client){
+  RadialProgressBar = require('vue-radial-progress')
+};
 export default {
   data() {
     return {
@@ -49,6 +52,8 @@ export default {
       <v-row  class="text-subtitle-1">
         <v-col  >
           <div @click="initiateAnimation()" class="d-flex d-sm-block justify-center">
+          <client-only>
+
             <radial-progress-bar :diameter="150"
                                  innerStrokeColor=""
                                  startColor="white"
@@ -60,6 +65,7 @@ export default {
             >
 
             </radial-progress-bar>
+          </client-only>
           </div >
           <span v-intersect="onIntersect"></span>
           <div class="text-center text-sm-left">
@@ -68,6 +74,7 @@ export default {
         </v-col>
         <v-col>
           <div @click="initiateAnimationCustomer()" class="d-flex d-sm-block justify-center">
+          <client-only>
             <radial-progress-bar :diameter="150"
                                  innerStrokeColor=""
                                  startColor="white"
@@ -79,6 +86,7 @@ export default {
             >
 
             </radial-progress-bar>
+          </client-only>
           </div>
           <div class="text-center text-sm-left">
             {{ customerSatisfaction }}% customer satisfaction
