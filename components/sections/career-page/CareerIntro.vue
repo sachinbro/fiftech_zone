@@ -2,11 +2,11 @@
     <v-container fluid class="">
         <v-row class="background white--text">
             <v-col cols="1"></v-col>
-            <v-col class="mt-10" cols="4">
+            <v-col class="mt-2 mt-md-10" cols="6" sm="4">
                 <p class="text-h5 text-sm-h4">Perspective <br>CAREER Start!</p>
                 <p class="text-caption text-sm-subtitle-1">We provide wide range of professsional service to meet your needs.</p>
             </v-col>
-            <v-col></v-col>
+            <v-col cols="0" sm=""></v-col>
             <v-col class="mt-md-16" cols="4" sm="3"><img src="../../../static/sections/Careerpage/Image 47.png" height="300px" alt=""></v-col>
             <v-col cols="1"></v-col>
         </v-row>

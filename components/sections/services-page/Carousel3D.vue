@@ -80,8 +80,8 @@ export default{
     }
 </script>
 <template>
-<div>
-        <p class="text-h5 text-sm-h4 text-center font-weight-medium"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
+<div class="mt-5 mt-sm-0 ">
+    <p class="text-h5 text-sm-h4 text-center font-weight-medium"><span style="border-bottom: 3px solid #707070">What we offer</span></p>
        <v-row class=" mt-sm-10">
         <v-col cols="1"></v-col>
         <v-col>
