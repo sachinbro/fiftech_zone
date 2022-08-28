@@ -43,6 +43,7 @@ export default {
 }
 </script>
 <template>
+<v-container fluid>
   <v-row class="projectinfo pa-4">
     <v-col cols="1"></v-col>
     <v-col class=" white--text text-h3 font-weight-bold">
@@ -99,6 +100,7 @@ export default {
     </v-col>
     <v-col cols="1"></v-col>
   </v-row>
+</v-container>
 </template>
 <style scoped>
 .projectinfo {

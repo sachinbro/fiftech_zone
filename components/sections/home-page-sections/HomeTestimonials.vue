@@ -53,34 +53,36 @@ export default{
             </v-row>
             <v-row>
                 <v-col cols="1"></v-col>
-                <v-col cols="12" sm="6" md="4" lg="3">
-                  <div class="text-h5 text-center">
-                    <VueSlickCarousel v-bind="settings" ref="slick">
-                      <div v-for="testimonial in testimonials" :key="testimonial.name">
-                        <v-card elevation="0">
-                          <v-card-text class="ma-md-4">
-                            <div class=" rounded-lg pa-md-10 pa-4 text-subtitle-1 testimonial">
-                              <p>
-                                The best generator I could find because it optionally includes lists, formatting, blockquotes and a
-                                bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists
-                                Bacon Ipsum - If you want to make your client hungry
-                              </p>
-                            </div>
-                            <div class="testimonial d-flex flex-column"></div>
-                            <div class="d-flex text-subtitle-1">
-                              <v-avatar size="70" class="mt-2">
-                                <img src="../../../static/biralo.png" alt="">
-                              </v-avatar>
-
-                              <p class="mt-4 ml-4">{{testimonial.name}}<br>{{testimonial.post}}</p>
-                            </div>
-                          </v-card-text>
-                        </v-card>
-                      </div>
-                    </VueSlickCarousel>
-
-                  </div>
-                </v-col>
+                <v-container fluid>
+                  <v-col cols="12" sm="6" md="4" lg="3">
+                    <v-container fluid class="text-h5 text-center">
+                      <VueSlickCarousel v-bind="settings" ref="slick">
+                        <div v-for="testimonial in testimonials" :key="testimonial.name">
+                          <v-card elevation="0">
+                            <v-card-text class="ma-md-4">
+                              <div class=" rounded-lg pa-md-10 pa-4 text-subtitle-1 testimonial">
+                                <p>
+                                  The best generator I could find because it optionally includes lists, formatting, blockquotes and a
+                                  bunch of other HTML Pan Ipsum - Gives you the option to generate text with a lot of different word lists
+                                  Bacon Ipsum - If you want to make your client hungry
+                                </p>
+                              </div>
+                              <div class="testimonial d-flex flex-column"></div>
+                              <div class="d-flex text-subtitle-1">
+                                <v-avatar size="70" class="mt-2">
+                                  <img src="../../../static/biralo.png" alt="">
+                                </v-avatar>
+  
+                                <p class="mt-4 ml-4">{{testimonial.name}}<br>{{testimonial.post}}</p>
+                              </div>
+                            </v-card-text>
+                          </v-card>
+                        </div>
+                      </VueSlickCarousel>
+  
+                    </v-container>
+                  </v-col>
+                </v-container>
                 <v-col cols="0" md="2"></v-col>
                 <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold mt-16">
                     <div >We use our focused set of</div>
@@ -104,4 +106,7 @@ export default{
     .testimonial{
         background-color: rgba(0,0,0,0.1);
     }
+
+    
+    
 </style>
