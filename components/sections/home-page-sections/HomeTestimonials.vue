@@ -51,11 +51,12 @@ export default{
                     <div class="text-h4  font-weight-bold">Testimonials</div>
                 </v-col>
             </v-row>
-            <v-row>
+          
+              <v-container fluid>
+                <v-row>
                 <v-col cols="1"></v-col>
-                <v-container fluid>
                   <v-col cols="12" sm="6" md="4" lg="3">
-                    <v-container fluid class="text-h5 text-center">
+                    <v-container  class="text-h5 text-center">
                       <VueSlickCarousel v-bind="settings" ref="slick">
                         <div v-for="testimonial in testimonials" :key="testimonial.name">
                           <v-card elevation="0">
@@ -82,23 +83,24 @@ export default{
   
                     </v-container>
                   </v-col>
-                </v-container>
-                <v-col cols="0" md="2"></v-col>
-                <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold mt-16">
-                    <div >We use our focused set of</div>
-                    <div >capabilities to build </div>
-                    <div >great experiences.</div>
-                    <div class="mt-2 text-h6 font-weight-light text--secondary">We are as good as they say we are.</div>
-                    <div class="pa-4">
-                      <v-btn elevation="0" style="border: 1px solid black;" @click="prevSlide()" class="rounded-lg mx-4" icon tile>
-                        <v-icon x-large   >mdi-chevron-left</v-icon>
-                      </v-btn>
-                      <v-btn elevation="0" style="border: 1px solid black;" @click="nextSlide()" class="rounded-lg" icon tile>
-                        <v-icon x-large  >mdi-chevron-right</v-icon>
-                      </v-btn>
-                   </div>
-                </v-col>
-            </v-row>
+
+                  <v-col cols="0" md="2"></v-col>
+                  <v-col cols="5" class="d-none d-md-block text-h3 text-center font-weight-bold mt-16">
+                      <div >We use our focused set of</div>
+                      <div >capabilities to build </div>
+                      <div >great experiences.</div>
+                      <div class="mt-2 text-h6 font-weight-light text--secondary">We are as good as they say we are.</div>
+                      <div class="pa-4">
+                        <v-btn elevation="0" style="border: 1px solid black;" @click="prevSlide()" class="rounded-lg mx-4" icon tile>
+                          <v-icon x-large   >mdi-chevron-left</v-icon>
+                        </v-btn>
+                        <v-btn elevation="0" style="border: 1px solid black;" @click="nextSlide()" class="rounded-lg" icon tile>
+                          <v-icon x-large  >mdi-chevron-right</v-icon>
+                        </v-btn>
+                     </div>
+                  </v-col>
+                </v-row>
+              </v-container>
         </v-container>
     </div>
 </template>
