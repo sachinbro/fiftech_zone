@@ -1,42 +1,44 @@
 <template>
-            <v-row class="mt-10 pa-4 pa-sm-0">
-                <v-col cols="0" sm="1" md="2"></v-col>
-                <v-col >
-                    <v-card max-width="600px" :class="$vuetify.breakpoint.name === 'xs' ? '': 'vision'" elevation="5">
-                    <v-card-title class="justify-center ">
-                        Our vision
-                    </v-card-title>
-                    <div class="d-flex justify-center">
-                        <img
+    <v-container fluid>
+        <v-row class="mt-10 pa-4 pa-sm-0">
+            <v-col cols="0" sm="1" md="2"></v-col>
+            <v-col >
+                <v-card max-width="600px" :class="$vuetify.breakpoint.name === 'xs' ? '': 'vision'" elevation="5">
+                <v-card-title class="justify-center ">
+                    Our vision
+                </v-card-title>
+                <div class="d-flex justify-center">
+                    <img
+                    height="200px"
+                    src="../../../static/sections/Aboutpage/Image 11.png"
+                    />
+                </div>
+                <v-card-text>
+                    <p class="px-4">To continuously experiment and progress toward intelligent software and applications with the implementation of Artificial Intelligence to meet people's needs.</p>
+                </v-card-text>
+            </v-card>
+            </v-col>
+            <v-col cols="0" sm="1">
+            </v-col>
+             <v-col>
+                <v-card max-width="600px" elevation="8" :class="$vuetify.breakpoint.name === 'xs' ? '' : 'mission'">
+                <v-card-title class="justify-center">
+                    Our Mission
+                </v-card-title>
+                <div class="d-flex justify-center">
+                    <img
                         height="200px"
-                        src="../../../static/sections/Aboutpage/Image 11.png"
+                        src="../../../static/sections/Aboutpage/Image 12.png"
                         />
-                    </div>
-                    <v-card-text>
-                        <p class="px-4">To continuously experiment and progress toward intelligent software and applications with the implementation of Artificial Intelligence to meet people's needs.</p>
-                    </v-card-text>
-                </v-card>
-                </v-col>
-                <v-col cols="0" sm="1">
-                </v-col>
-                 <v-col>
-                    <v-card max-width="600px" elevation="8" :class="$vuetify.breakpoint.name === 'xs' ? '' : 'mission'">
-                    <v-card-title class="justify-center">
-                        Our Mission
-                    </v-card-title>
-                    <div class="d-flex justify-center">
-                        <img
-                            height="200px"
-                            src="../../../static/sections/Aboutpage/Image 12.png"
-                            />
-                    </div>
-                    <v-card-text>
-                        <p class="px-4">To continuously experiment and progress toward intelligent software and applications with the implementation of Artificial Intelligence to meet people's needs.</p>
-                    </v-card-text>
-                </v-card>
-                </v-col>
-                <v-col cols="0" sm="1" md="2"></v-col>
-            </v-row>
+                </div>
+                <v-card-text>
+                    <p class="px-4">To continuously experiment and progress toward intelligent software and applications with the implementation of Artificial Intelligence to meet people's needs.</p>
+                </v-card-text>
+            </v-card>
+            </v-col>
+            <v-col cols="0" sm="1" md="2"></v-col>
+        </v-row>
+    </v-container>
 </template>
 <style scoped>
 .vision:hover{

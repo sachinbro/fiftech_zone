@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main">
     <Intro />
     <OfferSection />
     <WorkExperience />
@@ -45,4 +45,7 @@ export default {
     }
 }
 </script>
+<style scoped>
+
+</style>
 

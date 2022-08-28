@@ -49,7 +49,8 @@ export default {
 </script>
 <style scoped>
     .v-application {
-   font-family: Segoe UI , sans-serif !important; height: 100vh;
+   font-family: Segoe UI , sans-serif !important;
+    height: 100vh;
     
  }
  .smallbackground{
@@ -58,6 +59,7 @@ export default {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-origin: content-box;
+    
 }
  .homebackground{
     background-image: url("../static/sections/masked.png");

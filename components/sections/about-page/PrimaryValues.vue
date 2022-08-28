@@ -38,7 +38,7 @@
     }
 </script>
 <template>
-    <div class="mt-16" >
+    <v-container fluid class="mt-16" >
         <p class="text-h6 text-center">FIVE PRIMARY VALUES OF FIFTECHZONE</p>
         <p class="text-center text--disabled">There are many variations of lorem passages of Lorem Ipsum available, but <br> the majority have suffered. All the Lorem Ipsum generators.</p>
         <v-row>
@@ -66,7 +66,7 @@
             <v-col></v-col>
         </v-row>
 
-    </div>
+    </v-container>
 </template>
 <style scoped>
 @media only screen and (max-width: 767px) {

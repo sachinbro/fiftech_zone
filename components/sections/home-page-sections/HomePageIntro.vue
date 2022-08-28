@@ -35,7 +35,7 @@ export default{
                 <v-col cols="6" class="hidden-sm-and-down">
                     <img class="hidden-sm-and-down" src="../../../static/landing area image.svg" width="800px" height="600px" alt="" >
                 </v-col>
-                <v-col class="hidden-md-and-up" cols="6">
+                <v-col class="hidden-md-and-up" cols="12">
                     <v-img  :src="require('../../../static/landing area image.svg')" aspect-ratio="2" height="300" width="600" alt="" > </v-img>
                 </v-col>
             </v-row>
@@ -52,11 +52,11 @@ export default{
                 <v-col cols="0" md="1"></v-col>
                 <v-col class="tasks mt-2" cols="1">
                         <div class="hoverEffect text-center">
-                            <div class="multilayer-circle font-weight-bold white--text"> 
+                            <div class="multilayer-circle font-weight-bold white--text">
                                 1
                             </div>
                         </div>
-                
+
                 </v-col>
                 <v-col sm=2 lg="3" md="2"  class="horizontal-line ml-sm-16 ml-md-0"></v-col>
                 <v-col cols="1" >
@@ -94,17 +94,17 @@ export default{
                 </v-col>
                 <v-col cols="1"></v-col>
             </v-row>
-            <v-row class="d-flex d-sm-none">
+            <v-row class="d-flex d-sm-none mt-10">
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
                         <v-card-text class=" rounded-circle  text-center">
-                            <div class="small-multilayer-circle white--text text-caption"> 
+                            <div class="small-multilayer-circle white--text text-caption">
                                 1
                             </div>
                         </v-card-text>
-                    </v-card> 
+                    </v-card>
                 </v-col>
-               
+
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
@@ -116,13 +116,13 @@ export default{
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
                         <v-card-text class=" rounded-circle  text-center">
-                            <div class="small-multilayer-circle white--text"> 
+                            <div class="small-multilayer-circle white--text">
                                 2
                             </div>
                         </v-card-text>
-                    </v-card> 
+                    </v-card>
                 </v-col>
-               
+
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
@@ -135,13 +135,13 @@ export default{
                 <v-col class="tasks d-flex flex-column align-center justify-center" cols="12" >
                     <v-card elevation="0" height="">
                         <v-card-text class=" rounded-circle  text-center">
-                            <div class="small-multilayer-circle white--text"> 
+                            <div class="small-multilayer-circle white--text">
                                 3
                             </div>
                         </v-card-text>
-                    </v-card> 
+                    </v-card>
                 </v-col>
-               
+
             </v-row>
             <v-row class="d-flex d-sm-none">
                 <v-col class="d-flex flex-column align-center justify-center text-caption  mt-n7">
@@ -152,12 +152,12 @@ export default{
         </v-container>
         </div>
 
-    
+
 </template>
 <style scoped>
 /* .smallbackground{
     height: 50vh;
-    
+
     background-image: url("../../../static/sections/mobile.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -165,7 +165,7 @@ export default{
     background-origin: content-box;
 } */
 .background{
-    
+
     /* height: 100vh;
     background-image: url("../../../static/sections/masked1.png");
     background-repeat: no-repeat;
@@ -212,7 +212,7 @@ export default{
     100% {
         transform: scale(1.2);
     }
-    
+
 }
 
 </style>

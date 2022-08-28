@@ -118,7 +118,7 @@ export default{
                     <li v-for="plan in currentSlide.plans" :key="plan.title"> {{plan}} </li>
                     </ul>
                 </v-col>
-                <v-col cols="2"></v-col>
+                <v-col cols="1"></v-col>
             </v-row>
 </div>
  

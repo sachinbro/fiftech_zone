@@ -98,7 +98,7 @@ export default{
         <div class="d-flex align-start mb-3 ">
             <span v-for="icon in socialIcons" :key="icon.name" >
             <v-hover v-slot="{hover}">
-               <a :href="icon.url" target="_blank"><v-icon  class="mx-1" :color="hover ? 'black': ''" size="large" dark>mdi-{{icon.name}}</v-icon></a>
+               <a :href="icon.url" target="_blank" class="icons"><v-icon  class="mx-1" :color="hover ? 'black': ''" size="large" dark>mdi-{{icon.name}}</v-icon></a>
             </v-hover>
             </span>
         </div>
@@ -107,14 +107,15 @@ export default{
         <v-spacer></v-spacer>
         <v-row class="d-flex justify-space-around mb-4 mt-0 mt-sm-2 ">
             <div>
-                <a href="tel:+9779815790619" class="d-flex d-sm-none"><v-icon color="white">mdi-phone</v-icon></a>
-
+                <a href="tel:+9779815790619" class="icons d-inline d-sm-none"><v-icon color="white">mdi-phone</v-icon></a>
                 <v-icon class="d-none d-md-inline" color="white">mdi-phone</v-icon>
                 <span class="white--text text-caption hidden-sm-and-down hover">981-5790619</span>
             </div>
             <div>
-                <v-icon color="white">mdi-email-outline</v-icon>
-                <a href="mailto:fiftechzone@gmail.com"><span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span></a>
+                
+                <a href="mailto:fiftechzone@gmail.com" class="icons">
+                    <v-icon color="white">mdi-email-outline</v-icon>
+                    <span class="white--text text-caption hidden-sm-and-down hover">fiftechzone@gmail.com</span></a>
             </div>
             <div>
                 <v-icon dark>mdi-clock-outline</v-icon>
@@ -210,5 +211,8 @@ export default{
     }
     .v-application .elevation-1 {
   box-shadow: 0px 2px 1px -1px rgba(255, 255, 255, 0.2), 0px 1px 1px 0px rgba(255, 255, 255, 0.14), 0px 1px 3px 0px rgba(255, 255, 255, 0.12) !important;
+}
+.icons{
+    text-decoration: none;
 }
 </style>

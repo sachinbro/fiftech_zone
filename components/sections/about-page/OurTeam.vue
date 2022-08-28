@@ -27,7 +27,7 @@
     }
 </script>
 <template>
-    <div class="mt-14 mb-6" :class="$vuetify.breakpoint.name !== 'xs' ? 'background': ''">
+    <v-container fluid  :class="$vuetify.breakpoint.name !== 'xs' ? 'background': ''">
         <div class="pt-10">
             <p class="text-center text-h5 text-sm-h4"> MEET OUR TEAM <br> THE PROFESSIONALS</p>
             <p class="text-center "> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde, ipsam?</p>
@@ -52,7 +52,7 @@
 
             </v-row>
         </div>
-    </div>
+    </v-container>
 </template>
 <style scoped>
 .background{
@@ -62,5 +62,8 @@
     background-size: 100% 100%;
     background-position: center;
     background-origin: content-box;
+}
+.container{
+    padding: 0px !important;
 }
 </style>

@@ -10,7 +10,7 @@ import ServicePlan from "../components/sections/services-page/ServicePlan.vue";
 <template>
     <div>
         <ServicesIntro />
-        <Carousel3D />
+        <!-- <Carousel3D /> -->
         <ServicePlan />
     </div>
 </template>
